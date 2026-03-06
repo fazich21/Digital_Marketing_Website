@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
+import Link from "next/link";
 import { CheckCircle, ArrowRight, Search, Link2, PenTool } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import heroBg from "@/assets/hero-bg.jpg";
@@ -56,11 +57,14 @@ const HeroSection = () => {
               className="flex flex-wrap gap-4 mb-12"
             >
               <Button
+                asChild
                 size="lg"
                 variant="outline"
                 className="rounded-full text-base px-8 border-border text-foreground hover:bg-secondary hover:text-primary"
               >
-                Lets Grow <ArrowRight className="ml-2 w-4 h-4" />
+                <Link href="/contact">
+                  Lets Grow <ArrowRight className="ml-2 w-4 h-4" />
+                </Link>
               </Button>
             </motion.div>
 
