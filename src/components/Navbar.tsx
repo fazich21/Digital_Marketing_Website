@@ -33,7 +33,7 @@ const Navbar = () => {
         </Link>
 
         {/* Desktop */}
-        <div className="hidden md:flex items-center gap-8 absolute left-1/2 -translate-x-1/2">
+        <div className="hidden md:flex items-center gap-12 absolute left-1/2 -translate-x-1/2">
           <Link
             href={topNavLinks[0].href}
             className="text-sm font-medium text-white hover:text-white/80 transition-colors"
@@ -76,6 +76,13 @@ const Navbar = () => {
             </Link>
           ))}
         </div>
+
+        <Link
+          href="/contact"
+          className="hidden md:inline-flex text-sm font-semibold text-white transition-colors hover:text-primary"
+        >
+          Lets Grow
+        </Link>
 
         {/* Mobile toggle */}
         <button
