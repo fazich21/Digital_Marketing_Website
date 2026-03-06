@@ -58,9 +58,9 @@ const HeroSection = () => {
               <Button
                 size="lg"
                 variant="outline"
-                className="rounded-full text-base px-8 border-border text-foreground hover:bg-secondary"
+                className="rounded-full text-base px-8 border-border text-foreground hover:bg-secondary hover:text-primary"
               >
-                Book a call <ArrowRight className="ml-2 w-4 h-4" />
+                Lets Grow <ArrowRight className="ml-2 w-4 h-4" />
               </Button>
             </motion.div>
 

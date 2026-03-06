@@ -77,13 +77,6 @@ const Navbar = () => {
           ))}
         </div>
 
-        <Link
-          href="/contact"
-          className="hidden md:inline-flex text-sm font-semibold text-white transition-colors hover:text-primary"
-        >
-          Lets Grow
-        </Link>
-
         {/* Mobile toggle */}
         <button
           className="md:hidden text-foreground"
