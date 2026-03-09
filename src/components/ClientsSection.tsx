@@ -5,7 +5,7 @@ const clients = [
 
 const ClientsSection = () => {
   return (
-    <section className="py-20 bg-card">
+    <section className="py-12 bg-card">
       <div className="container mx-auto px-4">
         <div className="flex flex-col md:flex-row md:items-center justify-between mb-10">
           <div>
@@ -24,7 +24,7 @@ const ClientsSection = () => {
             {clients.map((c, i) => (
               <div
                 key={i}
-                className="slider-glow-border flex-shrink-0 rounded-xl bg-secondary px-10 py-5 text-base font-semibold text-foreground whitespace-nowrap"
+                className="flex-shrink-0 rounded-xl border border-border bg-secondary px-10 py-5 text-base font-semibold text-foreground whitespace-nowrap"
               >
                 {c}
               </div>

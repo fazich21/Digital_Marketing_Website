@@ -23,7 +23,7 @@ const ServicesSection = () => {
   );
 
   return (
-    <section id="services" className="py-24">
+    <section id="services" className="py-16">
       <div className="container mx-auto px-4">
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-12">
           <div>

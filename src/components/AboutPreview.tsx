@@ -26,7 +26,7 @@ const features = [
 
 const AboutPreview = () => {
   return (
-    <section className="py-24">
+    <section className="py-16">
       <div className="container mx-auto px-4">
         <div className="mb-16">
           <p className="text-sm text-muted-foreground mb-2">We have the answer.</p>

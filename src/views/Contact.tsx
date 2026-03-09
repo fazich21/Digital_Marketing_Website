@@ -43,7 +43,7 @@ const Contact = () => {
     <div className="min-h-screen bg-background">
       <Navbar />
 
-      <section className="pt-32 pb-24">
+      <section className="pt-32 pb-16">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
             {/* Info */}

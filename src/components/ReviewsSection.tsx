@@ -49,7 +49,7 @@ const reviewTrack = [...reviews, ...reviews];
 
 const ReviewsSection = () => {
   return (
-    <section className="py-24">
+    <section className="py-16">
       <div className="container mx-auto px-4">
         <span className="text-base font-medium text-primary flex items-center gap-2 mb-3">
           ✦ CLIENT TESTIMONIALS
@@ -70,7 +70,7 @@ const ReviewsSection = () => {
               {reviewTrack.map((r, i) => (
                 <div
                   key={`${r.name}-${i}`}
-                  className="slider-glow-border w-[360px] md:w-[430px] shrink-0 p-10"
+                  className="w-[360px] md:w-[430px] shrink-0 rounded-xl border border-border bg-card p-8"
                 >
                   <Quote className="w-9 h-9 text-primary mb-5" />
                   <p className="text-base text-muted-foreground leading-relaxed mb-7">{r.text}</p>

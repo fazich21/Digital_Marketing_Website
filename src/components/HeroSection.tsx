@@ -36,7 +36,7 @@ const HeroSection = () => {
       <div className="absolute top-1/4 -right-32 w-96 h-96 bg-primary/10 rounded-full blur-3xl" />
 
       <div className="container mx-auto px-4 relative z-10">
-        <div className="grid grid-cols-1 lg:grid-cols-[1.1fr_0.9fr] gap-12 lg:gap-16 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-[0.95fr_1.05fr] gap-12 lg:gap-16 items-center">
           <div className="max-w-3xl">
             <motion.div
               initial={{ opacity: 0, y: 30 }}
@@ -71,6 +71,18 @@ const HeroSection = () => {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.7, delay: 0.4 }}
+              className="inline-flex items-center gap-2 rounded-full border border-border bg-card px-4 py-2 mb-6"
+            >
+              <span className="text-sm text-foreground font-medium">
+                We are rated <span className="text-primary font-bold">4.8</span> based on{" "}
+                <span className="text-primary font-bold">1566 reviews</span>
+              </span>
+            </motion.div>
+
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.7, delay: 0.5 }}
               className="flex flex-wrap gap-4 mb-12"
             >
               <Button
@@ -84,44 +96,32 @@ const HeroSection = () => {
                 </Link>
               </Button>
             </motion.div>
-
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.7, delay: 0.5 }}
-              className="inline-flex items-center gap-2 rounded-full border border-border bg-card px-4 py-2"
-            >
-              <span className="text-sm text-foreground font-medium">
-                We are rated <span className="text-primary font-bold">4.8</span> based on{" "}
-                <span className="text-primary font-bold">1566 reviews</span>
-              </span>
-            </motion.div>
           </div>
 
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.25 }}
-            className="relative w-full max-w-xl mx-auto lg:mx-0 lg:justify-self-end"
+            className="relative w-full max-w-[900px] mx-auto lg:mx-0 lg:justify-self-end"
           >
             <div className="relative rounded-3xl bg-card overflow-hidden shadow-2xl">
               <div className="pointer-events-none absolute inset-0 z-10 rounded-3xl border border-border/70" />
               <div className="absolute inset-0 bg-gradient-to-br from-primary/10 via-transparent to-transparent" />
               <div className="absolute -top-24 -right-20 w-56 h-56 rounded-full bg-primary/15 blur-3xl" />
-              <div className="pointer-events-none absolute inset-x-0 top-0 z-30 h-24 bg-gradient-to-b from-background via-background/80 to-transparent" />
-              <div className="pointer-events-none absolute inset-x-0 bottom-0 z-30 h-24 bg-gradient-to-t from-background via-background/80 to-transparent" />
-              <div className="relative z-20 h-[520px] md:h-[620px]">
-                <div className="grid h-full grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 overflow-hidden">
-                  <div className="h-full overflow-hidden">
+              <div className="pointer-events-none absolute inset-y-0 left-0 z-30 w-14 md:w-20 bg-gradient-to-r from-background via-background/60 to-transparent" />
+              <div className="pointer-events-none absolute inset-y-0 right-0 z-30 w-14 md:w-20 bg-gradient-to-l from-background via-background/60 to-transparent" />
+              <div className="relative z-20 h-[520px] md:h-[620px] px-2 pt-12 pb-8">
+                <div className="grid h-full grid-rows-3 gap-2">
+                  <div className="overflow-hidden">
                     <motion.div
-                      className="space-y-4"
-                      animate={{ y: ["0%", "-50%"] }}
-                      transition={{ duration: 22, repeat: Infinity, ease: "linear" }}
+                      className="flex w-max gap-3"
+                      animate={{ x: ["0%", "-50%"] }}
+                      transition={{ duration: 42, repeat: Infinity, ease: "linear" }}
                     >
                       {[...sliderItems, ...sliderItems].map((item, index) => (
                         <div
-                          key={`col-1-${item}-${index}`}
-                          className="slider-glow-border w-full px-5 py-4"
+                          key={`row-1-${item}-${index}`}
+                          className="w-[clamp(220px,24vw,300px)] flex-none rounded-xl border border-border bg-background px-5 py-4"
                         >
                           <p className="text-base font-semibold text-foreground">{item}</p>
                           <p className="text-sm text-primary/90 mt-1">Campaign-ready delivery</p>
@@ -130,16 +130,16 @@ const HeroSection = () => {
                     </motion.div>
                   </div>
 
-                  <div className="h-full overflow-hidden hidden sm:block">
+                  <div className="overflow-hidden">
                     <motion.div
-                      className="space-y-4"
-                      animate={{ y: ["-50%", "0%"] }}
-                      transition={{ duration: 24, repeat: Infinity, ease: "linear" }}
+                      className="flex w-max gap-3"
+                      animate={{ x: ["-50%", "0%"] }}
+                      transition={{ duration: 48, repeat: Infinity, ease: "linear" }}
                     >
                       {[...sliderItems, ...sliderItems].map((item, index) => (
                         <div
-                          key={`col-2-${item}-${index}`}
-                          className="slider-glow-border w-full px-5 py-4"
+                          key={`row-2-${item}-${index}`}
+                          className="w-[clamp(220px,24vw,300px)] flex-none rounded-xl border border-border bg-background px-5 py-4"
                         >
                           <p className="text-base font-semibold text-foreground">{item}</p>
                           <p className="text-sm text-primary/90 mt-1">White-label execution</p>
@@ -148,16 +148,16 @@ const HeroSection = () => {
                     </motion.div>
                   </div>
 
-                  <div className="h-full overflow-hidden hidden lg:block">
+                  <div className="overflow-hidden">
                     <motion.div
-                      className="space-y-4"
-                      animate={{ y: ["0%", "-50%"] }}
-                      transition={{ duration: 26, repeat: Infinity, ease: "linear" }}
+                      className="flex w-max gap-3"
+                      animate={{ x: ["0%", "-50%"] }}
+                      transition={{ duration: 54, repeat: Infinity, ease: "linear" }}
                     >
                       {[...sliderItems, ...sliderItems].map((item, index) => (
                         <div
-                          key={`col-3-${item}-${index}`}
-                          className="slider-glow-border w-full px-5 py-4"
+                          key={`row-3-${item}-${index}`}
+                          className="w-[clamp(220px,24vw,300px)] flex-none rounded-xl border border-border bg-background px-5 py-4"
                         >
                           <p className="text-base font-semibold text-foreground">{item}</p>
                           <p className="text-sm text-primary/90 mt-1">Scalable growth ops</p>

@@ -54,7 +54,7 @@ export default async function ServiceDetailPage({ params }: ServicePageProps) {
     <div className="min-h-screen bg-background">
       <Navbar />
 
-      <section className="pt-32 pb-16">
+      <section className="pt-32 pb-10">
         <div className="container mx-auto px-4">
           <Link
             href="/services"
@@ -85,7 +85,7 @@ export default async function ServiceDetailPage({ params }: ServicePageProps) {
         </div>
       </section>
 
-      <section className="py-20">
+      <section className="py-12">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
             <div className="rounded-2xl border border-border bg-card p-7">

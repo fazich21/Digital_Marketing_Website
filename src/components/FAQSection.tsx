@@ -34,7 +34,7 @@ const faqs = [
 
 const FAQSection = () => {
   return (
-    <section className="py-24 bg-card">
+    <section className="py-16 bg-card">
       <div className="container mx-auto px-4 max-w-3xl">
         <span className="text-base font-medium text-primary flex items-center gap-2 mb-3">
           ✦ FAQS

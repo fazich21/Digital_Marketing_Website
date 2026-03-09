@@ -25,7 +25,7 @@ const stats = [
 
 const WhyChooseUs = () => {
   return (
-    <section className="py-24 bg-card">
+    <section className="py-16 bg-card">
       <div className="container mx-auto px-4">
         <span className="text-base font-medium text-primary flex items-center gap-2 mb-3">
           ✦ WHY CHOOSE US
