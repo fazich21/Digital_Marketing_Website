@@ -10,7 +10,18 @@ const serviceIcons: Record<(typeof marketplaceCategories)[number]["title"], Luci
   "Content Writing": PenTool,
 };
 
+const servicePriority: (typeof marketplaceCategories)[number]["title"][] = [
+  "PR",
+  "SEO",
+  "Link Building",
+  "Content Writing",
+];
+
 const ServicesSection = () => {
+  const orderedServices = [...marketplaceCategories].sort(
+    (a, b) => servicePriority.indexOf(a.title) - servicePriority.indexOf(b.title),
+  );
+
   return (
     <section id="services" className="py-24">
       <div className="container mx-auto px-4">
@@ -29,8 +40,10 @@ const ServicesSection = () => {
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
-          {marketplaceCategories.map((service, i) => {
+          {orderedServices.map((service, i) => {
             const Icon = serviceIcons[service.title];
+            const shortDescription = service.description.split(".")[0] + ".";
+            const shortHighlights = service.highlights.slice(0, 2);
 
             return (
               <Link key={service.title} href={service.href} className="block h-full">
@@ -43,23 +56,22 @@ const ServicesSection = () => {
                 >
                   <div className="absolute inset-0 bg-gradient-to-b from-primary/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
                   <div className="relative z-10">
-                    <span className="text-xs text-muted-foreground">{service.tag}</span>
-                    <h3 className="text-xl font-bold font-display mt-2 mb-3 group-hover:text-primary transition-colors">
+                    <span className="text-sm text-muted-foreground">{service.tag}</span>
+                    <h3 className="text-2xl font-bold font-display mt-2 mb-3 group-hover:text-primary transition-colors">
                       {service.title}
                     </h3>
-                    <Icon className="w-8 h-8 text-primary mb-4" />
-                    <p className="text-sm text-muted-foreground leading-relaxed mb-4">
-                      {service.description}
+                    <Icon className="w-9 h-9 text-primary mb-4" />
+                    <p className="text-base text-muted-foreground leading-relaxed mb-4">
+                      {shortDescription}
                     </p>
                     <div className="space-y-1 mb-4">
-                      {service.highlights.map((detail) => (
-                        <p key={detail} className="text-xs text-muted-foreground">
+                      {shortHighlights.map((detail) => (
+                        <p key={detail} className="text-sm text-muted-foreground">
                           • {detail}
                         </p>
                       ))}
                     </div>
-                    <p className="text-xs text-primary font-medium">{service.timeline}</p>
-                    <p className="text-xs text-muted-foreground mt-1">{service.count}</p>
+                    <p className="text-sm text-primary font-medium">{service.timeline}</p>
                   </div>
                 </motion.div>
               </Link>

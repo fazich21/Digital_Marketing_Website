@@ -34,9 +34,9 @@ const faqs = [
 
 const FAQSection = () => {
   return (
-    <section className="py-24 bg-card border-t border-border">
+    <section className="py-24 bg-card">
       <div className="container mx-auto px-4 max-w-3xl">
-        <span className="text-sm font-medium text-primary flex items-center gap-2 mb-3">
+        <span className="text-base font-medium text-primary flex items-center gap-2 mb-3">
           ✦ FAQS
         </span>
         <h2 className="text-3xl md:text-5xl font-bold font-display mb-12">

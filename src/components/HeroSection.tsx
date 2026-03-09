@@ -1,14 +1,31 @@
 import { motion } from "framer-motion";
-import Image from "next/image";
 import Link from "next/link";
-import { CheckCircle, ArrowRight, Search, Link2, PenTool } from "lucide-react";
+import { CheckCircle, ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import heroBg from "@/assets/hero-bg.jpg";
 
 const features = [
   "White label SEO services with superfast turnarounds",
   "Unrivalled quality for SEO agencies and teams",
   "ROI & margins designed for SEO resellers",
+];
+
+const sliderItems = [
+  "Infographic Design",
+  "Media Placements DR 50+",
+  "Social Video Ads",
+  "Explainer Videos",
+  "Blog Writing Service",
+  "Article Writing",
+  "Product Descriptions",
+  "Keyword Research",
+  "Multilingual Outreach",
+  "Infographic Outreach",
+  "Content Syndication",
+  "Website Copywriting",
+  "Blogger Outreach",
+  "Press Release Writing",
+  "Local Citation Building",
+  "Niche Edits",
 ];
 
 const HeroSection = () => {
@@ -87,58 +104,70 @@ const HeroSection = () => {
             transition={{ duration: 0.8, delay: 0.25 }}
             className="relative w-full max-w-xl mx-auto lg:mx-0 lg:justify-self-end"
           >
-            <motion.div
-              whileHover={{ scale: 1.02, rotateX: 3, rotateY: -3 }}
-              transition={{ type: "spring", stiffness: 220, damping: 20 }}
-              className="group relative aspect-[4/5] rounded-3xl border border-border/70 bg-card overflow-hidden shadow-2xl"
-              style={{ transformStyle: "preserve-3d" }}
-            >
-              <Image
-                src={heroBg}
-                alt="SEO, link building, and content writing workflow dashboard"
-                fill
-                priority
-                className="object-cover transition-transform duration-700 group-hover:scale-105"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-background/85 via-background/20 to-transparent" />
-              <div className="absolute inset-0 bg-gradient-to-br from-primary/15 via-transparent to-transparent" />
-              <div className="absolute -top-16 -right-16 w-44 h-44 rounded-full bg-primary/20 blur-3xl" />
+            <div className="relative rounded-3xl bg-card overflow-hidden shadow-2xl">
+              <div className="pointer-events-none absolute inset-0 z-10 rounded-3xl border border-border/70" />
+              <div className="absolute inset-0 bg-gradient-to-br from-primary/10 via-transparent to-transparent" />
+              <div className="absolute -top-24 -right-20 w-56 h-56 rounded-full bg-primary/15 blur-3xl" />
+              <div className="pointer-events-none absolute inset-x-0 top-0 z-30 h-24 bg-gradient-to-b from-background via-background/80 to-transparent" />
+              <div className="pointer-events-none absolute inset-x-0 bottom-0 z-30 h-24 bg-gradient-to-t from-background via-background/80 to-transparent" />
+              <div className="relative z-20 h-[520px] md:h-[620px]">
+                <div className="grid h-full grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 overflow-hidden">
+                  <div className="h-full overflow-hidden">
+                    <motion.div
+                      className="space-y-4"
+                      animate={{ y: ["0%", "-50%"] }}
+                      transition={{ duration: 22, repeat: Infinity, ease: "linear" }}
+                    >
+                      {[...sliderItems, ...sliderItems].map((item, index) => (
+                        <div
+                          key={`col-1-${item}-${index}`}
+                          className="slider-glow-border w-full px-5 py-4"
+                        >
+                          <p className="text-base font-semibold text-foreground">{item}</p>
+                          <p className="text-sm text-primary/90 mt-1">Campaign-ready delivery</p>
+                        </div>
+                      ))}
+                    </motion.div>
+                  </div>
 
-              <div className="absolute left-5 right-5 bottom-5 rounded-2xl border border-border/80 bg-card/90 backdrop-blur p-4">
-                <p className="text-xs uppercase tracking-wide text-muted-foreground mb-1">Growth Focus</p>
-                <p className="font-display text-lg font-bold text-foreground">SEO + Links + Content</p>
-                <p className="text-xs text-muted-foreground mt-1">
-                  One integrated workflow to improve rankings, authority, and conversions.
-                </p>
+                  <div className="h-full overflow-hidden hidden sm:block">
+                    <motion.div
+                      className="space-y-4"
+                      animate={{ y: ["-50%", "0%"] }}
+                      transition={{ duration: 24, repeat: Infinity, ease: "linear" }}
+                    >
+                      {[...sliderItems, ...sliderItems].map((item, index) => (
+                        <div
+                          key={`col-2-${item}-${index}`}
+                          className="slider-glow-border w-full px-5 py-4"
+                        >
+                          <p className="text-base font-semibold text-foreground">{item}</p>
+                          <p className="text-sm text-primary/90 mt-1">White-label execution</p>
+                        </div>
+                      ))}
+                    </motion.div>
+                  </div>
+
+                  <div className="h-full overflow-hidden hidden lg:block">
+                    <motion.div
+                      className="space-y-4"
+                      animate={{ y: ["0%", "-50%"] }}
+                      transition={{ duration: 26, repeat: Infinity, ease: "linear" }}
+                    >
+                      {[...sliderItems, ...sliderItems].map((item, index) => (
+                        <div
+                          key={`col-3-${item}-${index}`}
+                          className="slider-glow-border w-full px-5 py-4"
+                        >
+                          <p className="text-base font-semibold text-foreground">{item}</p>
+                          <p className="text-sm text-primary/90 mt-1">Scalable growth ops</p>
+                        </div>
+                      ))}
+                    </motion.div>
+                  </div>
+                </div>
               </div>
-            </motion.div>
-
-            <motion.div
-              animate={{ y: [0, -8, 0] }}
-              transition={{ duration: 3.2, repeat: Infinity, ease: "easeInOut" }}
-              className="absolute -left-4 top-12 hidden sm:flex items-center gap-2 rounded-xl border border-border bg-card/95 backdrop-blur px-3 py-2"
-            >
-              <Search className="w-4 h-4 text-primary" />
-              <span className="text-xs font-medium text-foreground">SEO</span>
-            </motion.div>
-
-            <motion.div
-              animate={{ y: [0, 9, 0] }}
-              transition={{ duration: 3.8, repeat: Infinity, ease: "easeInOut", delay: 0.4 }}
-              className="absolute -right-4 top-1/3 hidden sm:flex items-center gap-2 rounded-xl border border-border bg-card/95 backdrop-blur px-3 py-2"
-            >
-              <Link2 className="w-4 h-4 text-primary" />
-              <span className="text-xs font-medium text-foreground">Link Building</span>
-            </motion.div>
-
-            <motion.div
-              animate={{ y: [0, -7, 0] }}
-              transition={{ duration: 3.4, repeat: Infinity, ease: "easeInOut", delay: 0.2 }}
-              className="absolute left-8 -bottom-5 hidden sm:flex items-center gap-2 rounded-xl border border-border bg-card/95 backdrop-blur px-3 py-2"
-            >
-              <PenTool className="w-4 h-4 text-primary" />
-              <span className="text-xs font-medium text-foreground">Content Writing</span>
-            </motion.div>
+            </div>
           </motion.div>
         </div>
       </div>

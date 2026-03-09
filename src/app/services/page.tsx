@@ -23,9 +23,9 @@ export default function ServicesPage() {
     <div className="min-h-screen bg-background">
       <Navbar />
 
-      <section className="pt-32 pb-24 border-b border-border">
+      <section className="pt-32 pb-24">
         <div className="container mx-auto px-4">
-          <span className="text-sm font-medium text-primary flex items-center gap-2 mb-3">
+          <span className="text-base font-medium text-primary flex items-center gap-2 mb-3">
             ✦ SERVICES
           </span>
           <h1 className="text-4xl md:text-6xl font-bold font-display leading-tight mb-4">

@@ -47,11 +47,11 @@ const AboutPreview = () => {
               transition={{ duration: 0.5, delay: i * 0.1 }}
               className="text-center"
             >
-              <div className="inline-flex items-center justify-center w-12 h-12 rounded-lg bg-primary/10 text-primary mb-4">
-                <f.icon className="w-6 h-6" />
+              <div className="inline-flex items-center justify-center w-14 h-14 rounded-xl bg-primary/10 text-primary mb-5">
+                <f.icon className="w-7 h-7" />
               </div>
-              <h3 className="font-bold font-display text-lg mb-2">{f.title}</h3>
-              <p className="text-sm text-muted-foreground">{f.desc}</p>
+              <h3 className="font-bold font-display text-xl mb-3">{f.title}</h3>
+              <p className="text-base text-muted-foreground">{f.desc}</p>
             </motion.div>
           ))}
         </div>

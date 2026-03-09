@@ -55,7 +55,7 @@ const About = () => {
       </section>
 
       {/* Mission/Vision/Value */}
-      <section className="py-16 border-t border-border">
+      <section className="py-16">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {values.map((v, i) => (
@@ -78,7 +78,7 @@ const About = () => {
       </section>
 
       {/* Features */}
-      <section className="py-20 bg-card border-t border-border">
+      <section className="py-20 bg-card">
         <div className="container mx-auto px-4">
           <span className="text-sm font-medium text-primary flex items-center gap-2 mb-3">
             ✦ RANKOVATE FEATURES
@@ -110,7 +110,7 @@ const About = () => {
       </section>
 
       {/* Distribute/Rank/Amplify */}
-      <section className="py-24 border-t border-border">
+      <section className="py-24">
         <div className="container mx-auto px-4">
           <span className="text-sm font-medium text-primary flex items-center gap-2 mb-3">
             ✦ Built to Make Noise Where It Matters

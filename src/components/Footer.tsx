@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Send, MapPin } from "lucide-react";
+import { Send } from "lucide-react";
 
 const quickLinks = [
   { label: "Home", href: "/" },
@@ -92,11 +92,16 @@ const Footer = () => {
           {/* Contact */}
           <div>
             <h4 className="font-bold font-display mb-3">Contact Info</h4>
-            <div className="space-y-2 text-sm text-muted-foreground">
-              <p className="flex items-center gap-2">
-                <Send className="w-4 h-4 text-primary" />
-                +971-50-518-4462
-              </p>
+            <div className="space-y-2">
+              <a
+                href="https://t.me/+971505184462"
+                target="_blank"
+                rel="noreferrer"
+                className="inline-flex items-center gap-2 rounded-full bg-primary px-4 py-2 text-sm font-semibold text-primary-foreground hover:bg-primary/90 transition-colors"
+              >
+                <Send className="w-4 h-4" />
+                Telegram
+              </a>
             </div>
           </div>
         </div>

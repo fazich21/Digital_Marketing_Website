@@ -2,7 +2,7 @@ const partners = ["GoodFirms", "Google Partner", "Clutch", "DESIGNRUSH"];
 
 const PartnersSection = () => {
   return (
-    <section className="py-20 border-t border-border">
+    <section className="py-20">
       <div className="container mx-auto px-4">
         <div className="rounded-2xl bg-card border border-border p-10 md:p-16">
           <div className="flex flex-col md:flex-row md:items-center justify-between mb-10">

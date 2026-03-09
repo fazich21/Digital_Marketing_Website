@@ -54,7 +54,7 @@ export default async function ServiceDetailPage({ params }: ServicePageProps) {
     <div className="min-h-screen bg-background">
       <Navbar />
 
-      <section className="pt-32 pb-16 border-b border-border">
+      <section className="pt-32 pb-16">
         <div className="container mx-auto px-4">
           <Link
             href="/services"
@@ -64,7 +64,7 @@ export default async function ServiceDetailPage({ params }: ServicePageProps) {
             Back to all services
           </Link>
 
-          <span className="text-sm font-medium text-primary flex items-center gap-2 mb-3">
+          <span className="text-base font-medium text-primary flex items-center gap-2 mb-3">
             ✦ {service.tag}
           </span>
           <div className="flex flex-wrap items-center gap-3 mb-4">

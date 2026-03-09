@@ -25,9 +25,9 @@ const stats = [
 
 const WhyChooseUs = () => {
   return (
-    <section className="py-24 bg-card border-t border-border">
+    <section className="py-24 bg-card">
       <div className="container mx-auto px-4">
-        <span className="text-sm font-medium text-primary flex items-center gap-2 mb-3">
+        <span className="text-base font-medium text-primary flex items-center gap-2 mb-3">
           ✦ WHY CHOOSE US
         </span>
         <h2 className="text-3xl md:text-5xl font-bold font-display mb-12">
@@ -44,7 +44,7 @@ const WhyChooseUs = () => {
               transition={{ duration: 0.5, delay: i * 0.1 }}
               className="rounded-xl bg-secondary border border-border p-8"
             >
-              <span className="text-xs font-medium text-primary flex items-center gap-2 mb-4">
+              <span className="text-sm font-medium text-primary flex items-center gap-2 mb-4">
                 ✦ {s.tag}
               </span>
               <div className="text-5xl md:text-6xl font-bold font-display text-primary mb-4">

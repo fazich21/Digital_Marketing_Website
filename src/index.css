@@ -6,13 +6,14 @@
 
 @layer base {
   :root {
-    --background: 220 15% 5%;
+    --jet-black: 0 0% 4%;
+    --background: var(--jet-black);
     --foreground: 0 0% 98%;
 
-    --card: 220 12% 9%;
+    --card: var(--jet-black);
     --card-foreground: 0 0% 98%;
 
-    --popover: 220 12% 9%;
+    --popover: var(--jet-black);
     --popover-foreground: 0 0% 98%;
 
     --primary: 72 100% 50%;
@@ -36,7 +37,7 @@
 
     --radius: 0.75rem;
 
-    --sidebar-background: 220 12% 7%;
+    --sidebar-background: var(--jet-black);
     --sidebar-foreground: 0 0% 98%;
     --sidebar-primary: 72 100% 50%;
     --sidebar-primary-foreground: 220 15% 5%;
@@ -48,19 +49,19 @@
     /* Custom tokens */
     --lime: 72 100% 50%;
     --lime-foreground: 220 15% 5%;
-    --dark-card: 220 12% 12%;
+    --dark-card: var(--jet-black);
     --dark-card-hover: 220 12% 16%;
   }
 }
 
 @layer base {
   html {
-    font-size: 17px;
+    font-size: 19px;
   }
 
   @media (max-width: 640px) {
     html {
-      font-size: 16px;
+      font-size: 18px;
     }
   }
 
@@ -90,5 +91,46 @@
 
   .border-gradient-lime {
     border-image: linear-gradient(135deg, hsl(72 100% 50%), hsl(90 100% 40%)) 1;
+  }
+
+  @keyframes slider-border-spin {
+    to {
+      transform: rotate(1turn);
+    }
+  }
+
+  .slider-glow-border {
+    position: relative;
+    border-radius: 0.75rem;
+    isolation: isolate;
+    background: hsl(var(--background));
+    box-shadow: 0 0 24px hsl(var(--primary) / 0.2);
+  }
+
+  .slider-glow-border::before {
+    content: "";
+    position: absolute;
+    inset: -1px;
+    border-radius: inherit;
+    background: conic-gradient(
+      from 0deg,
+      hsl(var(--primary) / 0.15),
+      hsl(var(--primary) / 0.95),
+      hsl(var(--primary) / 0.2),
+      hsl(var(--primary) / 0.95),
+      hsl(var(--primary) / 0.15)
+    );
+    animation: slider-border-spin 3.2s linear infinite;
+    z-index: -1;
+    filter: drop-shadow(0 0 12px hsl(var(--primary) / 0.55));
+  }
+
+  .slider-glow-border::after {
+    content: "";
+    position: absolute;
+    inset: 1px;
+    border-radius: calc(0.75rem - 1px);
+    background: hsl(var(--background));
+    z-index: -1;
   }
 }

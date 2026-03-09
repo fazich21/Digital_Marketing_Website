@@ -3,10 +3,29 @@ import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
+import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { Mail, Send } from "lucide-react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { useToast } from "@/hooks/use-toast";
+
+const contactFaqs = [
+  {
+    question: "What is the fastest way to contact Rankovate?",
+    answer:
+      "The fastest way is to message us directly on Telegram. You can also fill out the contact form and our team will follow up.",
+  },
+  {
+    question: "Can I contact you without Telegram?",
+    answer:
+      "Yes. If you do not use Telegram, simply fill out the contact form with your project details and we will reply by email.",
+  },
+  {
+    question: "Should I use Telegram or the form?",
+    answer:
+      "Use Telegram for direct and quick conversation. Use the form when you want to share complete requirements in one structured message.",
+  },
+];
 
 const Contact = () => {
   const { toast } = useToast();
@@ -50,7 +69,15 @@ const Contact = () => {
                   </div>
                   <div>
                     <p className="text-sm text-muted-foreground">Telegram</p>
-                    <p className="font-semibold">+971-50-518-4462</p>
+                    <a
+                      href="https://t.me/+971505184462"
+                      target="_blank"
+                      rel="noreferrer"
+                      className="inline-flex items-center gap-2 rounded-full bg-primary px-4 py-2 text-sm font-semibold text-primary-foreground hover:bg-primary/90 transition-colors mt-1"
+                    >
+                      <Send className="w-4 h-4" />
+                      Open Telegram
+                    </a>
                   </div>
                 </div>
                 <div className="flex items-center gap-4">
@@ -133,6 +160,31 @@ const Contact = () => {
                   Send Message
                 </Button>
               </form>
+
+              <div className="mt-8 rounded-2xl border border-border bg-card p-8">
+                <span className="text-sm font-medium text-primary flex items-center gap-2 mb-3">
+                  ✦ CONTACT FAQS
+                </span>
+                <h2 className="text-2xl md:text-3xl font-bold font-display mb-5">
+                  Contacting <span className="text-primary">Rankovate</span>
+                </h2>
+                <Accordion type="single" collapsible className="space-y-3">
+                  {contactFaqs.map((faq, index) => (
+                    <AccordionItem
+                      key={faq.question}
+                      value={`contact-faq-${index}`}
+                      className="rounded-xl border border-border bg-secondary px-5 data-[state=open]:border-primary/40"
+                    >
+                      <AccordionTrigger className="text-left font-display text-base font-bold hover:no-underline py-4">
+                        {faq.question}
+                      </AccordionTrigger>
+                      <AccordionContent className="text-sm text-muted-foreground pb-4">
+                        {faq.answer}
+                      </AccordionContent>
+                    </AccordionItem>
+                  ))}
+                </Accordion>
+              </div>
             </motion.div>
           </div>
         </div>

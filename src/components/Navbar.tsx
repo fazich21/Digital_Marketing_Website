@@ -27,7 +27,7 @@ const Navbar = () => {
     <nav className="fixed top-0 left-0 right-0 z-50 border-b border-border bg-background/80 backdrop-blur-xl">
       <div className="container mx-auto relative flex items-center justify-between py-4 px-4">
         <Link href="/" className="flex items-center gap-1">
-          <span className="text-2xl font-bold font-display">
+          <span className="text-3xl font-bold font-display">
             <span className="text-primary">R</span>ankovate
           </span>
         </Link>
@@ -36,7 +36,7 @@ const Navbar = () => {
         <div className="hidden md:flex items-center gap-12 absolute left-1/2 -translate-x-1/2">
           <Link
             href={topNavLinks[0].href}
-            className="text-sm font-medium text-white hover:text-white/80 transition-colors"
+            className="text-base font-medium text-white hover:text-white/80 transition-colors"
           >
             {topNavLinks[0].label}
           </Link>
@@ -44,7 +44,7 @@ const Navbar = () => {
           <div className="relative group">
             <Link
               href={serviceLink.href}
-              className="inline-flex items-center gap-1 text-sm font-medium text-white hover:text-white/80 transition-colors"
+              className="inline-flex items-center gap-1 text-base font-medium text-white hover:text-white/80 transition-colors"
             >
               {serviceLink.label}
               <ChevronDown className="w-4 h-4" />
@@ -70,7 +70,7 @@ const Navbar = () => {
             <Link
               key={link.label}
               href={link.href}
-              className="text-sm font-medium text-white hover:text-white/80 transition-colors"
+              className="text-base font-medium text-white hover:text-white/80 transition-colors"
             >
               {link.label}
             </Link>
@@ -93,7 +93,7 @@ const Navbar = () => {
             <Link
               key={link.label}
               href={link.href}
-              className="block text-sm font-medium text-white hover:text-white/80"
+              className="block text-base font-medium text-white hover:text-white/80"
               onClick={() => setMobileOpen(false)}
             >
               {link.label}
@@ -108,7 +108,7 @@ const Navbar = () => {
                 <Link
                   key={category.title}
                   href={category.href}
-                  className="block text-sm text-white hover:text-white/80 transition-colors"
+                  className="block text-base text-white hover:text-white/80 transition-colors"
                   onClick={() => setMobileOpen(false)}
                 >
                   {category.title}
