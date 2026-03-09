@@ -1,5 +1,3 @@
-import { Quote } from "lucide-react";
-
 const reviews = [
   {
     name: "James Morgan",
@@ -72,7 +70,6 @@ const ReviewsSection = () => {
                   key={`${r.name}-${i}`}
                   className="w-[360px] md:w-[430px] shrink-0 rounded-xl border border-border bg-card p-8"
                 >
-                  <Quote className="w-9 h-9 text-primary mb-5" />
                   <p className="text-base text-muted-foreground leading-relaxed mb-7">{r.text}</p>
                   <div className="flex items-center justify-between gap-3">
                     <div className="flex items-center gap-3">

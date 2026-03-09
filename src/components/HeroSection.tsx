@@ -105,7 +105,6 @@ const HeroSection = () => {
             className="relative w-full max-w-[900px] mx-auto lg:mx-0 lg:justify-self-end"
           >
             <div className="relative rounded-3xl bg-card overflow-hidden shadow-2xl">
-              <div className="pointer-events-none absolute inset-0 z-10 rounded-3xl border border-border/70" />
               <div className="absolute inset-0 bg-gradient-to-br from-primary/10 via-transparent to-transparent" />
               <div className="absolute -top-24 -right-20 w-56 h-56 rounded-full bg-primary/15 blur-3xl" />
               <div className="pointer-events-none absolute inset-y-0 left-0 z-30 w-14 md:w-20 bg-gradient-to-r from-background via-background/60 to-transparent" />
@@ -116,7 +115,7 @@ const HeroSection = () => {
                     <motion.div
                       className="flex w-max gap-3"
                       animate={{ x: ["0%", "-50%"] }}
-                      transition={{ duration: 42, repeat: Infinity, ease: "linear" }}
+                      transition={{ duration: 112, repeat: Infinity, ease: "linear" }}
                     >
                       {[...sliderItems, ...sliderItems].map((item, index) => (
                         <div
@@ -134,7 +133,7 @@ const HeroSection = () => {
                     <motion.div
                       className="flex w-max gap-3"
                       animate={{ x: ["-50%", "0%"] }}
-                      transition={{ duration: 48, repeat: Infinity, ease: "linear" }}
+                      transition={{ duration: 112, repeat: Infinity, ease: "linear" }}
                     >
                       {[...sliderItems, ...sliderItems].map((item, index) => (
                         <div
@@ -152,7 +151,7 @@ const HeroSection = () => {
                     <motion.div
                       className="flex w-max gap-3"
                       animate={{ x: ["0%", "-50%"] }}
-                      transition={{ duration: 54, repeat: Infinity, ease: "linear" }}
+                      transition={{ duration: 112, repeat: Infinity, ease: "linear" }}
                     >
                       {[...sliderItems, ...sliderItems].map((item, index) => (
                         <div

@@ -1,14 +1,6 @@
 import { motion } from "framer-motion";
-import { Link2, Newspaper, Search, PenTool, type LucideIcon } from "lucide-react";
 import Link from "next/link";
 import { marketplaceCategories } from "@/constants/marketplaceCategories";
-
-const serviceIcons: Record<(typeof marketplaceCategories)[number]["title"], LucideIcon> = {
-  "Link Building": Link2,
-  PR: Newspaper,
-  SEO: Search,
-  "Content Writing": PenTool,
-};
 
 const servicePriority: (typeof marketplaceCategories)[number]["title"][] = [
   "PR",
@@ -41,7 +33,6 @@ const ServicesSection = () => {
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
           {orderedServices.map((service, i) => {
-            const Icon = serviceIcons[service.title];
             const shortDescription = service.description.split(".")[0] + ".";
             const shortHighlights = service.highlights.slice(0, 2);
 
@@ -60,7 +51,6 @@ const ServicesSection = () => {
                     <h3 className="text-2xl font-bold font-display mt-2 mb-3 group-hover:text-primary transition-colors">
                       {service.title}
                     </h3>
-                    <Icon className="w-9 h-9 text-primary mb-4" />
                     <p className="text-base text-muted-foreground leading-relaxed mb-4">
                       {shortDescription}
                     </p>

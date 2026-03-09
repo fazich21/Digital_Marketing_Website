@@ -25,6 +25,31 @@ const contactFaqs = [
     answer:
       "Use Telegram for direct and quick conversation. Use the form when you want to share complete requirements in one structured message.",
   },
+  {
+    question: "What details should I include in the contact form?",
+    answer:
+      "Include your website, project type, goals, and timeline. The more context you share, the faster we can recommend the right service plan.",
+  },
+  {
+    question: "How quickly will your team respond?",
+    answer:
+      "Most inquiries get a response within one business day. Telegram messages are usually answered faster when a strategist is available.",
+  },
+  {
+    question: "Can I share my requirements first and discuss later?",
+    answer:
+      "Yes. You can submit full requirements in the form first, and we will review them before scheduling the next discussion.",
+  },
+  {
+    question: "Do you accept international clients?",
+    answer:
+      "Yes, we work with Web3 and blockchain teams globally. You can contact us via Telegram or form from any region.",
+  },
+  {
+    question: "Can I contact you for only one service?",
+    answer:
+      "Absolutely. You can reach out for a single service like PR, SEO, Link Building, or Content Writing, and scale later if needed.",
+  },
 ];
 
 const Contact = () => {
@@ -160,32 +185,32 @@ const Contact = () => {
                   Send Message
                 </Button>
               </form>
-
-              <div className="mt-8 rounded-2xl border border-border bg-card p-8">
-                <span className="text-sm font-medium text-primary flex items-center gap-2 mb-3">
-                  ✦ CONTACT FAQS
-                </span>
-                <h2 className="text-2xl md:text-3xl font-bold font-display mb-5">
-                  Contacting <span className="text-primary">Rankovate</span>
-                </h2>
-                <Accordion type="single" collapsible className="space-y-3">
-                  {contactFaqs.map((faq, index) => (
-                    <AccordionItem
-                      key={faq.question}
-                      value={`contact-faq-${index}`}
-                      className="rounded-xl border border-border bg-secondary px-5 data-[state=open]:border-primary/40"
-                    >
-                      <AccordionTrigger className="text-left font-display text-base font-bold hover:no-underline py-4">
-                        {faq.question}
-                      </AccordionTrigger>
-                      <AccordionContent className="text-sm text-muted-foreground pb-4">
-                        {faq.answer}
-                      </AccordionContent>
-                    </AccordionItem>
-                  ))}
-                </Accordion>
-              </div>
             </motion.div>
+          </div>
+
+          <div className="mt-12 max-w-3xl mx-auto">
+            <span className="text-sm font-medium text-primary flex items-center gap-2 mb-3">
+              ✦ CONTACT FAQS
+            </span>
+            <h2 className="text-3xl md:text-5xl font-bold font-display mb-12">
+              Contacting <span className="text-primary">Rankovate</span>
+            </h2>
+            <Accordion type="single" collapsible className="space-y-3">
+              {contactFaqs.map((faq, index) => (
+                <AccordionItem
+                  key={faq.question}
+                  value={`contact-faq-${index}`}
+                  className="rounded-xl border border-border bg-secondary px-6 data-[state=open]:border-primary/40"
+                >
+                  <AccordionTrigger className="text-left font-display text-base md:text-lg font-bold hover:no-underline py-5">
+                    {faq.question}
+                  </AccordionTrigger>
+                  <AccordionContent className="text-sm text-muted-foreground pb-5">
+                    {faq.answer}
+                  </AccordionContent>
+                </AccordionItem>
+              ))}
+            </Accordion>
           </div>
         </div>
       </section>
