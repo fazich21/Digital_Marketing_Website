@@ -9,10 +9,10 @@ const quickLinks = [
 ];
 
 const services = [
-  "SEO",
-  "Content Writing",
-  "Link Building",
-  "PR",
+  { label: "SEO", href: "/services/seo" },
+  { label: "Content Writing", href: "/services/content-writing" },
+  { label: "Link Building", href: "/services/link-building" },
+  { label: "PR", href: "/services/pr" },
 ];
 
 const industries = [
@@ -66,10 +66,13 @@ const Footer = () => {
             <h4 className="font-bold font-display mb-4">Services</h4>
             <ul className="space-y-2">
               {services.map((s) => (
-                <li key={s}>
-                  <span className="text-sm text-muted-foreground hover:text-foreground transition-colors cursor-pointer">
-                    {s}
-                  </span>
+                <li key={s.label}>
+                  <Link
+                    href={s.href}
+                    className="text-sm text-muted-foreground hover:text-foreground transition-colors"
+                  >
+                    {s.label}
+                  </Link>
                 </li>
               ))}
             </ul>
