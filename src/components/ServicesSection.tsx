@@ -46,8 +46,8 @@ const ServicesSection = () => {
                   className="group relative h-full rounded-xl border border-border bg-card hover:border-primary/40 transition-all duration-300 overflow-hidden flex flex-col"
                 >
                   <div className="flex justify-center pt-6">
-                    <div className="bg-primary py-2 px-6 rounded-full">
-                      <h3 className="text-sm md:text-base font-bold font-display text-primary-foreground whitespace-nowrap">
+                    <div className="bg-primary/0 group-hover:bg-primary py-2 px-6 rounded-full border border-primary/0 group-hover:border-primary transition-all duration-300">
+                      <h3 className="text-sm md:text-base font-bold font-display text-foreground group-hover:text-primary-foreground whitespace-nowrap transition-colors duration-300">
                         {service.title}
                       </h3>
                     </div>

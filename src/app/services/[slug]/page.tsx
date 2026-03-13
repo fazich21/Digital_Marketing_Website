@@ -136,7 +136,7 @@ export default async function ServiceDetailPage({ params }: ServicePageProps) {
               What You Get in This <span className="text-primary">Service</span>
             </h3>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
-              {service.highlights.map((item) => (
+              {service.highlights.slice(0, 1).map((item) => (
                 <div key={item} className="rounded-lg border border-border bg-secondary/70 px-4 py-3 text-sm">
                   {item}
                 </div>
