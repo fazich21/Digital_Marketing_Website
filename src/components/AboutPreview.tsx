@@ -1,57 +1,57 @@
 import { motion } from "framer-motion";
-import { Tag, Headphones, Users, ShieldCheck } from "lucide-react";
+import { Zap, Cpu, BarChart3 } from "lucide-react";
 
-const features = [
+const processSteps = [
   {
-    icon: Tag,
-    title: "White Label Services",
-    desc: "White label services designed for agencies to resell",
+    icon: Zap,
+    title: "Strategy Overhype",
+    desc: "We don't just plan, we build the strategy that makes your competitors look like they're still in the analog age.",
   },
   {
-    icon: Headphones,
-    title: "Fanatical Support",
-    desc: "A dedicated support team on hand via telephone & email",
+    icon: Cpu,
+    title: "Tech-first execution",
+    desc: "Execution is everything. We prioritize technology and efficiency to bring your vision to life at lightning speed.",
   },
   {
-    icon: Users,
-    title: "No Vendor Clutter",
-    desc: "No need to manage multiple freelancers & vendors",
-  },
-  {
-    icon: ShieldCheck,
-    title: "Money Back Guarantee",
-    desc: "100% money back guarantee on all of our services",
+    icon: BarChart3,
+    title: "Transparent results",
+    desc: "No smoke and mirrors. Just real, measurable results that you can track and verify at every step of the way.",
   },
 ];
 
 const AboutPreview = () => {
   return (
-    <section className="py-16">
+    <section className="py-24 bg-secondary/30">
       <div className="container mx-auto px-4">
         <div className="mb-16">
-          <p className="text-sm text-muted-foreground mb-2">We have the answer.</p>
+          <div className="inline-flex items-center px-4 py-1 rounded-full bg-primary/10 border border-primary/20 text-primary text-sm font-bold uppercase tracking-wider mb-6">
+            Our Process
+          </div>
           <h2 className="text-3xl md:text-5xl font-bold font-display leading-tight">
-            In-house vs freelancers?
-            <br />
-            <span className="text-primary">Neither.</span>
+            Our <span className="text-primary">process.</span>
           </h2>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-          {features.map((f, i) => (
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          {processSteps.map((step, i) => (
             <motion.div
-              key={f.title}
+              key={step.title}
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: i * 0.1 }}
-              className="text-center"
+              className="relative p-8 rounded-2xl border border-border bg-card hover:border-primary/40 transition-all duration-300"
             >
-              <div className="inline-flex items-center justify-center w-14 h-14 rounded-xl bg-primary/10 text-primary mb-5">
-                <f.icon className="w-7 h-7" />
+              <div className="inline-flex items-center justify-center w-14 h-14 rounded-xl bg-primary/10 text-primary mb-6">
+                <step.icon className="w-7 h-7" />
               </div>
-              <h3 className="font-bold font-display text-xl mb-3">{f.title}</h3>
-              <p className="text-base text-muted-foreground">{f.desc}</p>
+              <h3 className="font-bold font-display text-2xl mb-4">{step.title}</h3>
+              <p className="text-base text-muted-foreground leading-relaxed">
+                {step.desc}
+              </p>
+              <div className="absolute top-6 right-8 text-4xl font-bold font-display opacity-5">
+                0{i + 1}
+              </div>
             </motion.div>
           ))}
         </div>

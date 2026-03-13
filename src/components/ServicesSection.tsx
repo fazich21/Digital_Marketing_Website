@@ -43,18 +43,20 @@ const ServicesSection = () => {
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
                   transition={{ duration: 0.5, delay: i * 0.1 }}
-                  className="group relative h-full rounded-xl border border-border bg-card p-6 hover:border-primary/40 transition-all duration-300 overflow-hidden"
+                  className="group relative h-full rounded-xl border border-border bg-card hover:border-primary/40 transition-all duration-300 overflow-hidden flex flex-col"
                 >
-                  <div className="absolute inset-0 bg-gradient-to-b from-primary/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
-                  <div className="relative z-10">
-                    <span className="text-sm text-muted-foreground">{service.tag}</span>
-                    <h3 className="text-2xl font-bold font-display mt-2 mb-3 group-hover:text-primary transition-colors">
+                  <div className="bg-primary py-3 px-6">
+                    <h3 className="text-lg md:text-xl font-bold font-display text-primary-foreground text-center">
                       {service.title}
                     </h3>
-                    <p className="text-base text-muted-foreground leading-relaxed mb-4">
+                  </div>
+                  <div className="absolute inset-0 bg-gradient-to-b from-primary/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none" />
+                  <div className="relative z-10 p-6 flex-1 flex flex-col">
+                    <span className="text-sm text-muted-foreground">{service.tag}</span>
+                    <p className="text-base text-muted-foreground leading-relaxed mb-4 mt-2">
                       {shortDescription}
                     </p>
-                    <div className="space-y-1 mb-4">
+                    <div className="space-y-1 mb-4 flex-1">
                       {shortHighlights.map((detail) => (
                         <p key={detail} className="text-sm text-muted-foreground">
                           • {detail}
