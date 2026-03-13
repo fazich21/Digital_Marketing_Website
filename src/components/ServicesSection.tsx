@@ -34,7 +34,7 @@ const ServicesSection = () => {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
           {orderedServices.map((service, i) => {
             const shortDescription = service.description.split(".")[0] + ".";
-            const shortHighlights = service.highlights.slice(0, 2);
+            const shortHighlights = service.highlights.slice(0, 1);
 
             return (
               <Link key={service.title} href={service.href} className="block h-full">
@@ -45,15 +45,17 @@ const ServicesSection = () => {
                   transition={{ duration: 0.5, delay: i * 0.1 }}
                   className="group relative h-full rounded-xl border border-border bg-card hover:border-primary/40 transition-all duration-300 overflow-hidden flex flex-col"
                 >
-                  <div className="bg-primary py-3 px-6">
-                    <h3 className="text-lg md:text-xl font-bold font-display text-primary-foreground text-center">
-                      {service.title}
-                    </h3>
+                  <div className="flex justify-center pt-6">
+                    <div className="bg-primary py-2 px-6 rounded-full">
+                      <h3 className="text-sm md:text-base font-bold font-display text-primary-foreground whitespace-nowrap">
+                        {service.title}
+                      </h3>
+                    </div>
                   </div>
                   <div className="absolute inset-0 bg-gradient-to-b from-primary/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none" />
                   <div className="relative z-10 p-6 flex-1 flex flex-col">
-                    <span className="text-sm text-muted-foreground">{service.tag}</span>
-                    <p className="text-base text-muted-foreground leading-relaxed mb-4 mt-2">
+                    <span className="text-xs text-muted-foreground uppercase tracking-wider">{service.tag}</span>
+                    <p className="text-base text-muted-foreground leading-relaxed mb-4 mt-3">
                       {shortDescription}
                     </p>
                     <div className="space-y-1 mb-4 flex-1">

@@ -49,9 +49,6 @@ const AboutPreview = () => {
               <p className="text-base text-muted-foreground leading-relaxed">
                 {step.desc}
               </p>
-              <div className="absolute top-6 right-8 text-4xl font-bold font-display opacity-5">
-                0{i + 1}
-              </div>
             </motion.div>
           ))}
         </div>
