@@ -38,15 +38,13 @@ const About = () => {
       <Navbar />
 
       {/* Hero */}
-      <section className="pt-32 pb-12">
+      <section className="pt-32 pb-16">
         <div className="container mx-auto px-4">
-          <span className="text-sm font-medium text-primary flex items-center gap-2 mb-3">
+          <span className="text-base font-medium text-primary flex items-center gap-2 mb-3">
             ✦ OUR APPROACH
           </span>
-          <h1 className="text-4xl md:text-6xl font-bold font-display leading-tight mb-6">
-            Driven by <span className="text-primary">Purpose</span>
-            <br />
-            Powered by <span className="text-primary">Precision</span>
+          <h1 className="text-3xl md:text-5xl font-bold font-display mb-12">
+            Our <span className="text-primary">Approach</span> to Web3 Growth
           </h1>
           <p className="text-lg text-muted-foreground max-w-2xl">
             At Rankovate, we execute lean, high-impact campaigns combining crypto PR & SEO — focused on traction, not vanity hype.
@@ -65,12 +63,16 @@ const About = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: i * 0.15 }}
+                className="group relative rounded-xl border border-border bg-card p-8 hover:border-primary/40 transition-all duration-300 overflow-hidden"
               >
-                <div className="inline-flex items-center justify-center w-10 h-10 rounded-lg bg-primary/10 text-primary mb-4">
-                  <v.icon className="w-5 h-5" />
+                <div className="absolute inset-0 bg-gradient-to-b from-primary/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none" />
+                <div className="relative z-10">
+                  <div className="inline-flex items-center justify-center w-12 h-12 rounded-xl bg-primary/10 group-hover:bg-primary text-primary group-hover:text-primary-foreground mb-6 transition-all duration-300">
+                    <v.icon className="w-6 h-6" />
+                  </div>
+                  <h3 className="text-xl font-bold font-display text-primary mb-3">{v.title}</h3>
+                  <p className="text-base text-muted-foreground leading-relaxed">{v.desc}</p>
                 </div>
-                <h3 className="text-lg font-bold font-display text-primary mb-2">{v.title}</h3>
-                <p className="text-sm text-muted-foreground leading-relaxed">{v.desc}</p>
               </motion.div>
             ))}
           </div>
@@ -80,8 +82,8 @@ const About = () => {
       {/* Features */}
       <section className="py-12 bg-card">
         <div className="container mx-auto px-4">
-          <span className="text-sm font-medium text-primary flex items-center gap-2 mb-3">
-            ✦ RANKOVATE FEATURES
+          <span className="text-base font-medium text-primary flex items-center gap-2 mb-3">
+            ✦ WHAT MAKES US DIFFERENT?
           </span>
           <h2 className="text-3xl md:text-5xl font-bold font-display mb-4">
             Why <span className="text-primary">Web3</span> Projects Grow
