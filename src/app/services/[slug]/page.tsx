@@ -94,14 +94,16 @@ export default async function ServiceDetailPage({ params }: ServicePageProps) {
 
       <section className="py-12">
         <div className="container mx-auto px-4">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
+          <div className="grid grid-cols-1 gap-6 mb-12">
             <div className="rounded-2xl border border-border bg-card p-7">
               <h2 className="text-2xl font-bold font-display mb-3">
                 What <span className="text-primary">It Is</span>
               </h2>
               <p className="text-sm text-muted-foreground leading-relaxed">{service.whatItIs}</p>
             </div>
+          </div>
 
+          <div className="grid grid-cols-1 gap-6 mb-12">
             <div className="rounded-2xl border border-border bg-card p-7">
               <h3 className="text-2xl font-bold font-display mb-4">
                 What You <span className="text-primary">Get</span>
