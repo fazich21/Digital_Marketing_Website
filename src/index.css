@@ -6,7 +6,7 @@
 
 @layer base {
   :root {
-    --jet-black: 0 0% 4%;
+    --jet-black: 0 0% 0%;
     --background: var(--jet-black);
     --foreground: 0 0% 98%;
 

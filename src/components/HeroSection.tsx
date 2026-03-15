@@ -32,7 +32,6 @@ const HeroSection = () => {
   return (
     <section className="relative min-h-screen flex items-center pt-20 overflow-hidden">
       {/* Background glow */}
-      <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-background to-background" />
       <div className="absolute top-1/4 -right-32 w-96 h-96 bg-primary/10 rounded-full blur-3xl" />
 
       <div className="container mx-auto px-4 relative z-10">
@@ -43,7 +42,7 @@ const HeroSection = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.7 }}
             >
-              <h1 className="text-5xl md:text-7xl font-bold font-display leading-tight mb-6">
+              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold font-display leading-tight mb-6">
                 Scale your{" "}
                 <span className="text-primary">SEO.</span>
                 <br />

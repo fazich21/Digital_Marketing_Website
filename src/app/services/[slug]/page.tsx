@@ -103,17 +103,23 @@ export default async function ServiceDetailPage({ params }: ServicePageProps) {
             </div>
 
             <div className="rounded-2xl border border-border bg-card p-7">
-              <h2 className="text-2xl font-bold font-display mb-3">
-                The <span className="text-primary">Outcome</span>
-              </h2>
-              <p className="text-sm text-muted-foreground leading-relaxed">{service.outcome}</p>
+              <h3 className="text-2xl font-bold font-display mb-4">
+                What You <span className="text-primary">Get</span>
+              </h3>
+              <div className="grid grid-cols-1 gap-3">
+                {service.highlights.map((item) => (
+                  <div key={item} className="rounded-lg border border-border bg-secondary/70 px-4 py-3 text-sm">
+                    {item}
+                  </div>
+                ))}
+              </div>
             </div>
           </div>
 
           <div className="grid grid-cols-1 mb-12">
             <div className="rounded-2xl border border-border bg-primary/5 p-7">
               <h2 className="text-2xl md:text-3xl font-bold font-display mb-10 text-center">
-                Our <span className="text-primary">Authority Framework</span>
+                Our Authority Framework
               </h2>
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
                 {service.authorityFramework.map((step, index) => {
@@ -143,42 +149,9 @@ export default async function ServiceDetailPage({ params }: ServicePageProps) {
             </div>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
-            <div className="rounded-2xl border border-border bg-card p-7">
-              <h2 className="text-2xl font-bold font-display mb-3">
-                Its <span className="text-primary">Role</span>
-              </h2>
-              <p className="text-sm text-muted-foreground leading-relaxed">{service.role}</p>
-            </div>
 
-            <div className="rounded-2xl border border-border bg-card p-7">
-              <h3 className="text-2xl font-bold font-display mb-4">
-                What You <span className="text-primary">Get</span>
-              </h3>
-              <div className="grid grid-cols-1 gap-3">
-                {service.highlights.map((item) => (
-                  <div key={item} className="rounded-lg border border-border bg-secondary/70 px-4 py-3 text-sm">
-                    {item}
-                  </div>
-                ))}
-              </div>
-            </div>
-          </div>
 
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-12">
-            <div className="rounded-2xl border border-border bg-secondary p-7">
-              <h3 className="text-xl font-bold font-display mb-4">
-                Where It Can Be <span className="text-primary">Applied</span>
-              </h3>
-              <div className="space-y-3">
-                {service.applications.map((item) => (
-                  <p key={item} className="text-sm text-muted-foreground leading-relaxed">
-                    • {item}
-                  </p>
-                ))}
-              </div>
-            </div>
-
+          <div className="grid grid-cols-1 gap-6 mb-12">
             <div className="rounded-2xl border border-border bg-secondary p-7">
               <h3 className="text-xl font-bold font-display mb-4">
                 How It Is <span className="text-primary">Effective</span>

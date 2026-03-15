@@ -21,14 +21,11 @@ const processSteps = [
 
 const AboutPreview = () => {
   return (
-    <section className="py-24 bg-secondary/30">
+    <section className="py-24 bg-background">
       <div className="container mx-auto px-4">
         <div className="mb-16">
-          <div className="inline-flex items-center px-4 py-1 rounded-full bg-primary/10 border border-primary/20 text-primary text-sm font-bold uppercase tracking-wider mb-6">
-            Our Process
-          </div>
           <h2 className="text-3xl md:text-5xl font-bold font-display leading-tight">
-            Our <span className="text-primary">process.</span>
+            Our process.
           </h2>
         </div>
 
@@ -42,7 +39,7 @@ const AboutPreview = () => {
               transition={{ duration: 0.5, delay: i * 0.1 }}
               className="relative p-8 rounded-2xl border border-border bg-card hover:border-primary/40 transition-all duration-300"
             >
-              <div className="inline-flex items-center justify-center w-14 h-14 rounded-xl bg-primary/10 text-primary mb-6">
+              <div className="inline-flex items-center justify-center w-14 h-14 rounded-xl bg-secondary border border-border text-foreground mb-6">
                 <step.icon className="w-7 h-7" />
               </div>
               <h3 className="font-bold font-display text-2xl mb-4">{step.title}</h3>
