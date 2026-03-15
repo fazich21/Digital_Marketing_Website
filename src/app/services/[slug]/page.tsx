@@ -1,7 +1,12 @@
 import type { Metadata } from "next";
-import Link from "next/link";
 import { notFound } from "next/navigation";
-import { ArrowLeft, Link2, Newspaper, PenTool, Search, type LucideIcon } from "lucide-react";
+import {
+  Link2, Newspaper, PenTool, Search,
+  Radio, Target, MessageSquare, FileText,
+  Activity, Send, Stethoscope, Map as MapIcon,
+  TrendingUp, BarChart3, Lightbulb, List,
+  Edit3, CheckCircle, type LucideIcon
+} from "lucide-react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { marketplaceCategories, type ServiceCategory } from "@/constants/marketplaceCategories";
@@ -11,6 +16,13 @@ const serviceIcons: Record<ServiceCategory["title"], LucideIcon> = {
   PR: Newspaper,
   SEO: Search,
   "Content Writing": PenTool,
+};
+
+const allIcons: Record<string, LucideIcon> = {
+  Search, Target, MessageSquare, FileText,
+  Radio, PenTool, Send, Activity,
+  Stethoscope, Map: MapIcon, TrendingUp, BarChart3,
+  Lightbulb, List, Edit3, CheckCircle,
 };
 
 interface ServicePageProps {
@@ -56,14 +68,6 @@ export default async function ServiceDetailPage({ params }: ServicePageProps) {
 
       <section className="pt-32 pb-10">
         <div className="container mx-auto px-4">
-          <Link
-            href="/services"
-            className="inline-flex items-center gap-2 text-sm text-muted-foreground hover:text-foreground transition-colors mb-6"
-          >
-            <ArrowLeft className="w-4 h-4" />
-            Back to all services
-          </Link>
-
           <span className="text-base font-medium text-primary flex items-center gap-2 mb-3">
             ✦ {service.tag}
           </span>
@@ -77,6 +81,9 @@ export default async function ServiceDetailPage({ params }: ServicePageProps) {
           </div>
 
           <p className="text-lg text-muted-foreground max-w-3xl mb-5">{service.description}</p>
+          <p className="text-xl md:text-2xl font-medium text-foreground max-w-3xl mb-8 leading-snug">
+            {service.heroLine}
+          </p>
           <div className="inline-flex items-center gap-2 rounded-full border border-border bg-card px-4 py-2">
             <span className="text-sm text-foreground">
               {service.timeline} • <span className="text-primary font-semibold">{service.count}</span>
@@ -97,9 +104,64 @@ export default async function ServiceDetailPage({ params }: ServicePageProps) {
 
             <div className="rounded-2xl border border-border bg-card p-7">
               <h2 className="text-2xl font-bold font-display mb-3">
+                The <span className="text-primary">Outcome</span>
+              </h2>
+              <p className="text-sm text-muted-foreground leading-relaxed">{service.outcome}</p>
+            </div>
+          </div>
+
+          <div className="grid grid-cols-1 mb-12">
+            <div className="rounded-2xl border border-border bg-primary/5 p-7">
+              <h2 className="text-2xl md:text-3xl font-bold font-display mb-10 text-center">
+                Our <span className="text-primary">Authority Framework</span>
+              </h2>
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                {service.authorityFramework.map((step, index) => {
+                  const StepIcon = allIcons[step.icon];
+                  return (
+                    <div key={index} className="flex flex-col items-center text-center group relative">
+                      {/* Optional connecting line for larger screens */}
+                      {index < service.authorityFramework.length - 1 && (
+                        <div className="hidden lg:block absolute top-8 left-[60%] w-full h-[2px] bg-border/50 -z-10" />
+                      )}
+
+                      <div className="w-16 h-16 rounded-2xl bg-background border border-border flex items-center justify-center mb-5 transition-transform duration-300 group-hover:-translate-y-2 group-hover:border-primary/50 group-hover:shadow-sm">
+                        {StepIcon ? (
+                          <StepIcon className="w-7 h-7 text-primary" />
+                        ) : (
+                          <span className="text-primary font-bold">{index + 1}</span>
+                        )}
+                      </div>
+                      <h3 className="text-lg font-bold font-display mb-3">{step.title}</h3>
+                      <p className="text-sm text-muted-foreground leading-relaxed">
+                        {step.description}
+                      </p>
+                    </div>
+                  );
+                })}
+              </div>
+            </div>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
+            <div className="rounded-2xl border border-border bg-card p-7">
+              <h2 className="text-2xl font-bold font-display mb-3">
                 Its <span className="text-primary">Role</span>
               </h2>
               <p className="text-sm text-muted-foreground leading-relaxed">{service.role}</p>
+            </div>
+
+            <div className="rounded-2xl border border-border bg-card p-7">
+              <h3 className="text-2xl font-bold font-display mb-4">
+                What You <span className="text-primary">Get</span>
+              </h3>
+              <div className="grid grid-cols-1 gap-3">
+                {service.highlights.map((item) => (
+                  <div key={item} className="rounded-lg border border-border bg-secondary/70 px-4 py-3 text-sm">
+                    {item}
+                  </div>
+                ))}
+              </div>
             </div>
           </div>
 
@@ -131,18 +193,6 @@ export default async function ServiceDetailPage({ params }: ServicePageProps) {
             </div>
           </div>
 
-          <div className="rounded-2xl border border-border bg-card p-7">
-            <h3 className="text-xl font-bold font-display mb-4">
-              What You Get in This <span className="text-primary">Service</span>
-            </h3>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
-              {service.highlights.slice(0, 1).map((item) => (
-                <div key={item} className="rounded-lg border border-border bg-secondary/70 px-4 py-3 text-sm">
-                  {item}
-                </div>
-              ))}
-            </div>
-          </div>
         </div>
       </section>
 

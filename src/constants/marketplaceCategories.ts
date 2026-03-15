@@ -24,6 +24,31 @@ export const marketplaceCategories = [
       "Long-term link equity supports sustained traffic growth.",
       "Editorial placements can drive both SEO value and referral traffic.",
     ],
+    heroLine: "Dominate search results with high-authority, contextual backlinks.",
+    outcome:
+      "Our link building service delivers sustained, long-term growth in organic traffic and a robust backlink profile that outpaces your competitors.",
+    authorityFramework: [
+      {
+        icon: "Search",
+        title: "Discovery & Audit",
+        description: "We analyze your backlink profile and identify high-impact target pages.",
+      },
+      {
+        icon: "Target",
+        title: "Prospecting",
+        description: "We find and vet niche-relevant, high-authority domains for placement.",
+      },
+      {
+        icon: "MessageSquare",
+        title: "Outreach",
+        description: "We conduct manual outreach to site owners to secure editorial placements.",
+      },
+      {
+        icon: "FileText",
+        title: "Reporting",
+        description: "Links go live with strategic anchors, and we provide transparent reporting.",
+      },
+    ],
   },
   {
     slug: "pr",
@@ -49,6 +74,31 @@ export const marketplaceCategories = [
       "Syndication amplifies reach across multiple audience segments.",
       "Branded mentions increase awareness and search demand.",
       "PR assets can be repurposed for sales, investor, and community channels.",
+    ],
+    heroLine: "Amplify your message across premium media outlets and industry publications.",
+    outcome:
+      "The outcome of a successful PR campaign is widespread brand recognition, enhanced credibility, and a surge in both direct visits and branded search volume.",
+    authorityFramework: [
+      {
+        icon: "Radio",
+        title: "Media Strategy",
+        description: "We analyze your brand angle and align it with current media trends.",
+      },
+      {
+        icon: "PenTool",
+        title: "Press Creation",
+        description: "Expert writers craft compelling press releases optimized for journalists.",
+      },
+      {
+        icon: "Send",
+        title: "Distribution",
+        description: "Your story is distributed to top-tier syndication networks and publishers.",
+      },
+      {
+        icon: "Activity",
+        title: "Impact Analysis",
+        description: "We track live placements and measure the impact on brand visibility.",
+      },
     ],
   },
   {
@@ -76,6 +126,31 @@ export const marketplaceCategories = [
       "Creates durable growth through compounding organic visibility.",
       "Enhances site performance and UX, which supports conversion rates.",
     ],
+    heroLine: "Climb to the top of search rankings with a data-driven, holistic SEO strategy.",
+    outcome:
+      "We deliver a technically sound, lightning-fast website that continuously captures high-intent traffic and maximizes your organic revenue.",
+    authorityFramework: [
+      {
+        icon: "Stethoscope",
+        title: "Technical Health",
+        description: "We resolve indexing issues, site speed bottlenecks, and crawl errors.",
+      },
+      {
+        icon: "Map",
+        title: "Semantic Mapping",
+        description: "Keywords are strategically mapped to content silos matching user intent.",
+      },
+      {
+        icon: "TrendingUp",
+        title: "Optimization",
+        description: "On-page elements and content are optimized to outrank competitors.",
+      },
+      {
+        icon: "BarChart3",
+        title: "Growth Tracking",
+        description: "We monitor rank fluctuations and organic traffic growth over time.",
+      },
+    ],
   },
   {
     slug: "content-writing",
@@ -101,6 +176,31 @@ export const marketplaceCategories = [
       "Consistent publishing supports keyword breadth and topical depth.",
       "Clear messaging reduces friction in the buyer journey.",
       "Reusable content assets lower long-term campaign production costs.",
+    ],
+    heroLine: "Engage your audience and convert visitors with expertly crafted, SEO-optimized content.",
+    outcome:
+      "You receive an authoritative brand voice that ranks highly for target keywords, effectively drawing qualified leads straight into your sales funnel.",
+    authorityFramework: [
+      {
+        icon: "Lightbulb",
+        title: "Topic Ideation",
+        description: "We research topics that solve user pain points and capture search volume.",
+      },
+      {
+        icon: "List",
+        title: "Comprehensive Briefs",
+        description: "Data-backed outlines ensure content depth and semantic relevance.",
+      },
+      {
+        icon: "Edit3",
+        title: "Expert Writing",
+        description: "Copy is crafted by specialized writers to match your unique brand voice.",
+      },
+      {
+        icon: "CheckCircle",
+        title: "Quality Assurance",
+        description: "Rigorous editing ensures optimization, clarity, and conversion readiness.",
+      },
     ],
   },
 ] as const;

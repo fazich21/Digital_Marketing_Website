@@ -33,7 +33,7 @@ const Navbar = () => {
         </Link>
 
         {/* Desktop */}
-        <div className="hidden md:flex items-center gap-12 absolute left-1/2 -translate-x-1/2">
+        <div className="hidden lg:flex items-center gap-6 lg:gap-12 absolute left-1/2 -translate-x-1/2">
           <Link
             href={topNavLinks[0].href}
             className="text-base font-medium text-white hover:text-white/80 transition-colors"
@@ -79,7 +79,7 @@ const Navbar = () => {
 
         {/* Mobile toggle */}
         <button
-          className="md:hidden text-foreground"
+          className="lg:hidden text-foreground"
           onClick={() => setMobileOpen(!mobileOpen)}
         >
           {mobileOpen ? <X size={24} /> : <Menu size={24} />}
@@ -88,7 +88,7 @@ const Navbar = () => {
 
       {/* Mobile menu */}
       {mobileOpen && (
-        <div className="md:hidden border-t border-border bg-background px-4 pb-6 pt-4 space-y-4">
+        <div className="lg:hidden border-t border-border bg-background px-4 pb-6 pt-4 space-y-4">
           {mobileNavLinks.map((link) => (
             <Link
               key={link.label}

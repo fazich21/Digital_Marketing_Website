@@ -124,7 +124,7 @@ const Contact = () => {
               transition={{ duration: 0.6, delay: 0.2 }}
             >
               <form onSubmit={handleSubmit} className="rounded-2xl border border-border bg-card p-8 space-y-5">
-                <div className="grid grid-cols-2 gap-4">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                   <div>
                     <label className="text-sm font-medium mb-1.5 block">First Name</label>
                     <Input
@@ -152,7 +152,7 @@ const Contact = () => {
                     className="bg-secondary border-border"
                   />
                 </div>
-                <div className="grid grid-cols-2 gap-4">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                   <div>
                     <label className="text-sm font-medium mb-1.5 block">Phone No</label>
                     <Input
