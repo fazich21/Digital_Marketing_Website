@@ -3,50 +3,55 @@ export const marketplaceCategories = [
     slug: "pr",
     href: "/services/pr",
     title: "PR",
-    tag: "Secure media links",
+    tag: "Tech Authority & Media",
     count: "6 Services in this category",
-    description: "Distribute your story to trusted crypto and business media for stronger visibility.",
-    highlights: ["Press release distribution", "Placement and publication reporting"],
+    description: "Secure high-authority media placements and build brand trust with strategic tech-focused PR campaigns.",
+    highlights: [
+      "Strategic media placement in top-tier technology and business publications",
+      "Expert narrative development for software launches and breakthroughs",
+      "Full-cycle press release distribution and placement reporting",
+      "Thought leadership positioning for tech founders and executive teams"
+    ],
     timeline: "Typical turnaround: 24-48 hours",
     whatItIs:
-      "PR service distributes your announcements to media outlets and digital publications to build visibility, credibility, and branded search demand.",
+      "Press Release for technology companies is a strategic communication process that builds brand authority through earned media. We identify your unique technical advantages and translate them into news-worthy stories for publications like TechCrunch, Wired, and Forbes. Our service manages everything from narrative development to targeted outreach and placement tracking.",
     role:
-      "Its role is to position your brand in front of relevant audiences while creating trust signals that support both acquisition and SEO.",
+      "PR builds institutional trust and market authority that traditional advertising cannot achieve. In the rapid tech sector, third-party validation from respected outlets acts as a powerful endorsement, educating the market and attracting strategic investment. It creates a 'halo effect' that enhances all your marketing efforts and market resilience.",
     applications: [
-      "Product launches, roadmap announcements, and funding updates.",
-      "Brand awareness pushes in new markets or verticals.",
-      "Reputation building for early-stage and growth-stage companies.",
-      "Campaigns that need immediate visibility and media momentum.",
+      "Announcing software updates and major product launches to global audiences.",
+      "Sharing funding milestones and acquisitions to build investor confidence.",
+      "Positioning company founders as industry leaders through expert commentary.",
+      "Driving brand awareness during international expansion or new market entry."
     ],
     effectiveness: [
-      "Media coverage strengthens brand trust and social proof.",
-      "Syndication amplifies reach across multiple audience segments.",
-      "Branded mentions increase awareness and search demand.",
-      "PR assets can be repurposed for sales, investor, and community channels.",
+      "Securing media coverage strengthens brand trust and provides social proof.",
+      "Global syndication amplifies reach across developers and C-suite decision-makers.",
+      "Consistent branded mentions dramatically increase organic search demand.",
+      "High-quality PR assets can be repurposed across all internal marketing channels."
     ],
-    heroLine: "Amplify your message across premium media outlets and industry publications.",
+    heroLine: "Amplify your tech innovations and secure global media coverage with strategic PR designed for high-growth startups.",
     outcome:
-      "The outcome of a successful PR campaign is widespread brand recognition, enhanced credibility, and a surge in both direct visits and branded search volume.",
+      "Our strategic PR service increases brand authority and secures high-impact placements that drive organic search demand and lasting market trust.",
     authorityFramework: [
       {
         icon: "Radio",
         title: "Media Strategy",
-        description: "We analyze your brand angle and align it with current media trends.",
+        description: "We align your brand narrative with current global media trends and industry-specific journalist interests.",
       },
       {
         icon: "PenTool",
         title: "Press Creation",
-        description: "Expert writers craft compelling press releases optimized for journalists.",
+        description: "Expert technical writers craft compelling, data-driven press releases optimized for news editors.",
       },
       {
         icon: "Send",
         title: "Distribution",
-        description: "Your story is distributed to top-tier syndication networks and publishers.",
+        description: "Your story is distributed through our exclusive network of premium technology and business news hubs.",
       },
       {
         icon: "Activity",
         title: "Impact Analysis",
-        description: "We track live placements and measure the impact on brand visibility.",
+        description: "We provide comprehensive reporting that tracks placements and measures the tangible impact on digital visibility.",
       },
     ],
   },
@@ -54,50 +59,55 @@ export const marketplaceCategories = [
     slug: "seo",
     href: "/services/seo",
     title: "SEO",
-    tag: "Set your foundations",
+    tag: "SaaS & Tech Growth",
     count: "3 Services in this category",
-    description: "Improve rankings with technical fixes, on-page optimization, and measurable growth plans.",
-    highlights: ["Technical and content audits", "Keyword and internal-link mapping"],
+    description: "Dominate search rankings and drive qualified organic traffic with data-driven SEO for SaaS and tech brands.",
+    highlights: [
+      "Technical SEO audits focused on Core Web Vitals and site architecture",
+      "Strategic keyword research targeting high-intent tech and SaaS queries",
+      "On-page optimization for complex technical content and landing pages",
+      "Semantic content mapping to establish industry-leading topical authority"
+    ],
     timeline: "Typical turnaround: 24-48 hours",
     whatItIs:
-      "SEO is a structured process to improve your site’s discoverability in search engines through technical health, content relevance, and authority signals.",
+      "Search Engine Optimization for tech companies is a data-driven process designed to improve discoverability through technical health and content relevance. We optimize underlying code, improve speeds, and ensure search engines can index your most valuable assets. This service bridges the gap between technical infrastructure and high-level content strategy.",
     role:
-      "Its role is to generate qualified organic traffic, reduce paid acquisition dependency, and compound growth over time.",
+      "SEO generates a steady stream of qualified organic traffic, reducing dependency on expensive paid acquisition. For SaaS, it captures users across the buyer journey, from problem awareness to final decision. It builds long-term brand authority, establishing your position as a trusted market leader through compounding search visibility.",
     applications: [
-      "Websites with declining rankings or traffic volatility.",
-      "Businesses expanding into new service pages or markets.",
-      "Content-led growth strategies targeting high-intent search queries.",
-      "Ecommerce and SaaS sites requiring scalable organic acquisition.",
+      "Websites experiencing declining organic rankings or traffic volatility.",
+      "SaaS businesses expanding into new international markets or service lines.",
+      "Content-led growth strategies targeting high-intent technical search queries.",
+      "Enterprise platforms requiring scalable organic acquisition and site architectures."
     ],
     effectiveness: [
-      "Improves ranking positions for commercial and informational keywords.",
-      "Increases qualified traffic with stronger search intent matching.",
-      "Creates durable growth through compounding organic visibility.",
-      "Enhances site performance and UX, which supports conversion rates.",
+      "Significantly improves ranking positions for commercial and informational queries.",
+      "Increases qualified leads by matching content with technical search intent.",
+      "Creates a durable growth engine through compounding organic search visibility.",
+      "Enhances site performance and UX, directly supporting higher conversion rates."
     ],
-    heroLine: "Climb to the top of search rankings with a data-driven, holistic SEO strategy.",
+    heroLine: "Climb to the top of search rankings with a data-driven SEO strategy designed for scaling technology and SaaS companies.",
     outcome:
-      "We deliver a technically sound, lightning-fast website that continuously captures high-intent traffic and maximizes your organic revenue.",
+      "We deliver a technically sound, fast website that captures high-intent traffic, maximizes organic revenue, and establishes your brand dominance.",
     authorityFramework: [
       {
         icon: "Stethoscope",
         title: "Technical Health",
-        description: "We resolve indexing issues, site speed bottlenecks, and crawl errors.",
+        description: "We resolve indexing issues, site speed bottlenecks, and crawl errors to optimize for modern algorithms.",
       },
       {
         icon: "Map",
         title: "Semantic Mapping",
-        description: "Keywords are strategically mapped to content silos matching user intent.",
+        description: "Keywords are strategically mapped to content silos that match user intent and build topical authority.",
       },
       {
         icon: "TrendingUp",
         title: "Optimization",
-        description: "On-page elements and content are optimized to outrank competitors.",
+        description: "We optimize all on-page elements and technical copy to ensure your site outranks aggressive competitors.",
       },
       {
         icon: "BarChart3",
         title: "Growth Tracking",
-        description: "We monitor rank fluctuations and organic traffic growth over time.",
+        description: "We monitor rank fluctuations and organic traffic growth, delivering actionable insights for continuous refinement.",
       },
     ],
   },
@@ -105,50 +115,55 @@ export const marketplaceCategories = [
     slug: "link-building",
     href: "/services/link-building",
     title: "Link Building",
-    tag: "High-authority backlinks",
+    tag: "High-Authority Tech Backlinks",
     count: "6 Services in this category",
-    description: "Build authority with contextual backlinks from vetted, niche-relevant websites.",
-    highlights: ["Guest posts and niche edits", "Anchor text and URL strategy"],
+    description: "Boost domain authority and outrank competitors with premium contextual backlinks from vetted tech websites.",
+    highlights: [
+      "Manual outreach to high-authority technology blogs and news outlets",
+      "Contextual backlink placements within relevant technical content",
+      "Strategic anchor text optimization to reinforce target keyword rankings",
+      "Transparent reporting on live placements and authority improvements"
+    ],
     timeline: "Typical turnaround: 24-48 hours",
     whatItIs:
-      "Link building is the process of acquiring relevant, trustworthy backlinks from external sites to strengthen your domain authority and organic rankings.",
+      "Link building for the tech industry is the process of acquiring high-quality backlinks from authoritative websites to strengthen domain authority and rankings. It is a critical signal of trust and value to search engines. We prioritize manual, white-hat techniques to secure permanent editorial links that provide long-term SEO value and industry credibility.",
     role:
-      "Its role is to improve off-page SEO signals, increase topical authority, and help key pages rank for competitive search terms.",
+      "Strategic link building provides the authority needed to compete for lucrative search terms in the crowded technology space. It drives targeted referral traffic from reputable sites, establishing your brand as a recognized part of the tech ecosystem. A robust profile ensures your high-quality content receives the visibility required to fuel significant growth.",
     applications: [
-      "Product and service landing pages that need stronger authority.",
-      "New websites that need trust signals to compete in search results.",
-      "Content hubs and blog clusters targeting high-intent keywords.",
-      "Local and niche campaigns where contextual citations matter.",
+      "Software landing pages that require stronger domain authority to rank.",
+      "New technology websites that need immediate trust signals and traction.",
+      "Technical content hubs requiring external validation to reach the top.",
+      "Niche-specific campaigns where contextual citations are essential for authority."
     ],
     effectiveness: [
-      "Quality backlinks improve domain credibility and ranking potential.",
-      "Strategic anchors reinforce topical relevance for target pages.",
-      "Long-term link equity supports sustained traffic growth.",
-      "Editorial placements can drive both SEO value and referral traffic.",
+      "High-quality backlinks from reputable tech sites improve domain credibility.",
+      "Strategic anchor text reinforces topical relevance for your core solutions.",
+      "Permanent editorial placements provide sustained traffic growth over time.",
+      "Editorial placements drive a steady stream of qualified industry referral traffic."
     ],
-    heroLine: "Dominate search results with high-authority, contextual backlinks.",
+    heroLine: "Dominate search results with high-authority, contextual backlinks from the most respected names in the global tech industry.",
     outcome:
-      "Our link building service delivers sustained, long-term growth in organic traffic and a robust backlink profile that outpaces your competitors.",
+      "Our link-building service delivers sustained growth in organic traffic and creates a robust authority profile that outpaces your competitors.",
     authorityFramework: [
       {
         icon: "Search",
         title: "Discovery & Audit",
-        description: "We analyze your backlink profile and identify high-impact target pages.",
+        description: "We analyze your backlink profile and identify the highest-impact target pages for our outreach efforts.",
       },
       {
         icon: "Target",
         title: "Prospecting",
-        description: "We find and vet niche-relevant, high-authority domains for placement.",
+        description: "Our team vets niche-relevant, high-authority technology domains to ensure every placement meets our standards.",
       },
       {
         icon: "MessageSquare",
         title: "Outreach",
-        description: "We conduct manual outreach to site owners to secure editorial placements.",
+        description: "We perform personalized manual outreach to editors, building relationships to secure permanent editorial placements.",
       },
       {
         icon: "FileText",
         title: "Reporting",
-        description: "Links go live with strategic anchors, and we provide transparent reporting.",
+        description: "We provide full transparency with reports on every live link, including anchor text and site SEO metrics.",
       },
     ],
   },
@@ -156,50 +171,55 @@ export const marketplaceCategories = [
     slug: "content-writing",
     href: "/services/content-writing",
     title: "Content Writing",
-    tag: "On-demand content",
+    tag: "Technical Content & Copy",
     count: "5 Services in this category",
-    description: "Publish conversion-focused content mapped to search intent and user journey stages.",
-    highlights: ["SEO briefs and outlines", "Long-form blogs and landing-page copy"],
+    description: "Engage your audience with expert technical content that converts complex innovations into clear, compelling narratives.",
+    highlights: [
+      "SEO-optimized technical blog posts and long-form whitepapers",
+      "Conversion-focused landing page copy for SaaS and IT services",
+      "Comprehensive API documentation and developer-focused guides",
+      "Expert editing to ensure technical accuracy and brand consistency"
+    ],
     timeline: "Typical turnaround: 24-48 hours",
     whatItIs:
-      "Content writing service creates SEO-ready and conversion-driven copy tailored to your audience, funnel stage, and brand voice.",
+      "Technical content writing is the process of creating engaging, informative content that explains complex software and hardware solutions. We combine expert research with creative storytelling and SEO best practices to produce content that ranks well and converts visitors. From ideation to publication, we ensure every piece is engineered for maximum impact.",
     role:
-      "Its role is to educate, persuade, and convert users while supporting topical authority and organic performance.",
+      "Quality content educates potential customers, builds trust, and drives conversions by clearly communicating your technical value proposition. It plays a critical role in SEO, as search engines reward websites that publish valuable, original information. Expert writing transforms your technical knowledge into a powerful marketing asset that fuels your growth engine.",
     applications: [
-      "Landing pages designed for lead generation and signups.",
-      "Blog content targeting awareness, comparison, and decision stages.",
-      "Product and feature pages requiring clearer positioning.",
-      "Email, social, and campaign assets that need message consistency.",
+      "High-converting landing pages designed for tech lead generation and signups.",
+      "Blog content targeting all stages of the buyer journey and search intent.",
+      "Product and feature pages requiring clear, jargon-free technical positioning.",
+      "Multi-channel campaign assets that require a consistent, authoritative voice."
     ],
     effectiveness: [
-      "Intent-aligned content improves engagement and conversion quality.",
-      "Consistent publishing supports keyword breadth and topical depth.",
-      "Clear messaging reduces friction in the buyer journey.",
-      "Reusable content assets lower long-term campaign production costs.",
+      "Content aligned with user intent improves engagement and lead quality.",
+      "Consistent publishing of technical content supports broad keyword coverage.",
+      "Clear, expert messaging reduces friction and moves prospects through the journey.",
+      "Evergreen technical assets provide long-term value across all marketing channels."
     ],
-    heroLine: "Engage your audience and convert visitors with expertly crafted, SEO-optimized content.",
+    heroLine: "Engage your audience and convert visitors with expertly crafted, SEO-optimized technical content for software and tech brands.",
     outcome:
-      "You receive an authoritative brand voice that ranks highly for target keywords, effectively drawing qualified leads straight into your sales funnel.",
+      "Our content writing service provides an authoritative brand voice that ranks for target keywords and draws qualified leads into your sales funnel.",
     authorityFramework: [
       {
         icon: "Lightbulb",
         title: "Topic Ideation",
-        description: "We research topics that solve user pain points and capture search volume.",
+        description: "We research technical topics that solve user pain points while capturing significant industry search volume.",
       },
       {
         icon: "List",
         title: "Comprehensive Briefs",
-        description: "Data-backed outlines ensure content depth and semantic relevance.",
+        description: "Data-backed outlines ensure deep semantic relevance and full coverage of the technical subject matter.",
       },
       {
         icon: "Edit3",
         title: "Expert Writing",
-        description: "Copy is crafted by specialized writers to match your unique brand voice.",
+        description: "Copy is crafted by specialized technical writers who match your brand voice with high technical accuracy.",
       },
       {
         icon: "CheckCircle",
         title: "Quality Assurance",
-        description: "Rigorous editing ensures optimization, clarity, and conversion readiness.",
+        description: "We perform rigorous editing to ensure assets are SEO-optimized, technically sound, and ready for conversion.",
       },
     ],
   },

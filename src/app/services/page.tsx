@@ -57,9 +57,7 @@ export default function ServicesPage() {
                     {service.title}
                   </h2>
                   <Icon className="w-8 h-8 text-primary mb-4" />
-                  <p className="text-sm text-muted-foreground leading-relaxed mb-4">{service.description}</p>
-                  <p className="text-xs text-primary font-medium">{service.timeline}</p>
-                  <p className="text-xs text-muted-foreground mt-1 mb-4">{service.count}</p>
+                  <p className="text-sm text-muted-foreground leading-relaxed mb-6">{service.description}</p>
                   <span className="inline-flex items-center gap-1 text-sm font-medium text-foreground group-hover:text-primary transition-colors">
                     View service <ArrowRight className="w-4 h-4" />
                   </span>
