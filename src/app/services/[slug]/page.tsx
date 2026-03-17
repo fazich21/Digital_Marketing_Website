@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
+import Link from "next/link";
 import {
   Link2, Newspaper, PenTool, Search,
   Radio, Target, MessageSquare, FileText,
@@ -258,22 +259,28 @@ export default async function ServiceDetailPage({ params }: ServicePageProps) {
       <section className="py-24 bg-card">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
-             <motion.div
-              initial={{ opacity: 0, scale: 0.95 }}
-              whileInView={{ opacity: 1, scale: 1 }}
-              viewport={{ once: true }}
-              className="relative aspect-square md:aspect-auto md:h-[500px] rounded-3xl overflow-hidden"
-            >
-              <div className="absolute inset-0 bg-gradient-to-br from-primary/20 via-primary/5 to-background border border-border flex items-center justify-center p-12">
-                 <div className="text-center">
-                    <div className="w-24 h-24 rounded-full bg-primary/20 flex items-center justify-center mx-auto mb-6 animate-pulse">
-                        <TrendingUp className="w-12 h-12 text-primary" />
-                    </div>
-                    <h4 className="text-2xl font-bold font-display mb-4">Driving Growth</h4>
-                    <p className="text-muted-foreground">Strategic execution focused on long-term performance and brand authority.</p>
-                 </div>
-              </div>
-            </motion.div>
+            <Link href="/contact" className="block w-full h-full">
+              <motion.div
+                initial={{ opacity: 0, scale: 0.95 }}
+                whileInView={{ opacity: 1, scale: 1 }}
+                whileHover={{ scale: 1.02 }}
+                viewport={{ once: true }}
+                className="relative aspect-square md:aspect-auto md:h-[500px] rounded-3xl overflow-hidden group cursor-pointer"
+              >
+                <div className="absolute inset-0 bg-gradient-to-br from-primary/20 via-primary/5 to-background border border-border group-hover:border-primary/40 transition-colors flex items-center justify-center p-12">
+                   <div className="text-center">
+                      <div className="w-24 h-24 rounded-full bg-primary/20 flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-500">
+                          <TrendingUp className="w-12 h-12 text-primary" />
+                      </div>
+                      <h4 className="text-2xl font-bold font-display mb-4">Driving Growth</h4>
+                      <p className="text-muted-foreground mb-6">Strategic execution focused on long-term performance and brand authority.</p>
+                      <span className="inline-flex items-center gap-2 text-primary font-bold group-hover:gap-3 transition-all">
+                        Get Started <ArrowRight className="w-5 h-5" />
+                      </span>
+                   </div>
+                </div>
+              </motion.div>
+            </Link>
 
             <motion.div
               initial={{ opacity: 0, x: 20 }}

@@ -2,18 +2,7 @@ import { motion } from "framer-motion";
 import Link from "next/link";
 import { marketplaceCategories } from "@/constants/marketplaceCategories";
 
-const servicePriority: (typeof marketplaceCategories)[number]["title"][] = [
-  "PR",
-  "SEO",
-  "Link Building",
-  "Content Writing",
-];
-
 const ServicesSection = () => {
-  const orderedServices = [...marketplaceCategories].sort(
-    (a, b) => servicePriority.indexOf(a.title) - servicePriority.indexOf(b.title),
-  );
-
   return (
     <section id="services" className="py-16">
       <div className="container mx-auto px-4">
@@ -32,7 +21,7 @@ const ServicesSection = () => {
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
-          {orderedServices.map((service, i) => {
+          {marketplaceCategories.map((service, i) => {
             const shortDescription = service.description.split(".")[0] + ".";
             const shortHighlights = service.highlights.slice(0, 1);
 

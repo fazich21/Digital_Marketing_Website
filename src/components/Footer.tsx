@@ -9,10 +9,10 @@ const quickLinks = [
 ];
 
 const services = [
-  { label: "SEO", href: "/services/seo" },
-  { label: "Content Writing", href: "/services/content-writing" },
-  { label: "Link Building", href: "/services/link-building" },
   { label: "PR", href: "/services/pr" },
+  { label: "SEO", href: "/services/seo" },
+  { label: "Link Building", href: "/services/link-building" },
+  { label: "Content Writing", href: "/services/content-writing" },
 ];
 
 const industries = [

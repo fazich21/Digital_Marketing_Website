@@ -1,56 +1,5 @@
 export const marketplaceCategories = [
   {
-    slug: "link-building",
-    href: "/services/link-building",
-    title: "Link Building",
-    tag: "A la carte link building",
-    count: "6 Services in this category",
-    description: "Build authority with contextual backlinks from vetted, niche-relevant websites.",
-    highlights: ["Guest posts and niche edits", "Anchor text and URL strategy"],
-    timeline: "Typical turnaround: 7-14 business days",
-    whatItIs:
-      "Link building is the process of acquiring relevant, trustworthy backlinks from external sites to strengthen your domain authority and organic rankings.",
-    role:
-      "Its role is to improve off-page SEO signals, increase topical authority, and help key pages rank for competitive search terms.",
-    applications: [
-      "Product and service landing pages that need stronger authority.",
-      "New websites that need trust signals to compete in search results.",
-      "Content hubs and blog clusters targeting high-intent keywords.",
-      "Local and niche campaigns where contextual citations matter.",
-    ],
-    effectiveness: [
-      "Quality backlinks improve domain credibility and ranking potential.",
-      "Strategic anchors reinforce topical relevance for target pages.",
-      "Long-term link equity supports sustained traffic growth.",
-      "Editorial placements can drive both SEO value and referral traffic.",
-    ],
-    heroLine: "Dominate search results with high-authority, contextual backlinks.",
-    outcome:
-      "Our link building service delivers sustained, long-term growth in organic traffic and a robust backlink profile that outpaces your competitors.",
-    authorityFramework: [
-      {
-        icon: "Search",
-        title: "Discovery & Audit",
-        description: "We analyze your backlink profile and identify high-impact target pages.",
-      },
-      {
-        icon: "Target",
-        title: "Prospecting",
-        description: "We find and vet niche-relevant, high-authority domains for placement.",
-      },
-      {
-        icon: "MessageSquare",
-        title: "Outreach",
-        description: "We conduct manual outreach to site owners to secure editorial placements.",
-      },
-      {
-        icon: "FileText",
-        title: "Reporting",
-        description: "Links go live with strategic anchors, and we provide transparent reporting.",
-      },
-    ],
-  },
-  {
     slug: "pr",
     href: "/services/pr",
     title: "PR",
@@ -58,7 +7,7 @@ export const marketplaceCategories = [
     count: "6 Services in this category",
     description: "Distribute your story to trusted crypto and business media for stronger visibility.",
     highlights: ["Press release distribution", "Placement and publication reporting"],
-    timeline: "Typical turnaround: 48 hours to launch",
+    timeline: "Typical turnaround: 24-48 hours",
     whatItIs:
       "PR service distributes your announcements to media outlets and digital publications to build visibility, credibility, and branded search demand.",
     role:
@@ -109,7 +58,7 @@ export const marketplaceCategories = [
     count: "3 Services in this category",
     description: "Improve rankings with technical fixes, on-page optimization, and measurable growth plans.",
     highlights: ["Technical and content audits", "Keyword and internal-link mapping"],
-    timeline: "Typical turnaround: 5-10 business days",
+    timeline: "Typical turnaround: 24-48 hours",
     whatItIs:
       "SEO is a structured process to improve your site’s discoverability in search engines through technical health, content relevance, and authority signals.",
     role:
@@ -153,6 +102,57 @@ export const marketplaceCategories = [
     ],
   },
   {
+    slug: "link-building",
+    href: "/services/link-building",
+    title: "Link Building",
+    tag: "High-authority backlinks",
+    count: "6 Services in this category",
+    description: "Build authority with contextual backlinks from vetted, niche-relevant websites.",
+    highlights: ["Guest posts and niche edits", "Anchor text and URL strategy"],
+    timeline: "Typical turnaround: 24-48 hours",
+    whatItIs:
+      "Link building is the process of acquiring relevant, trustworthy backlinks from external sites to strengthen your domain authority and organic rankings.",
+    role:
+      "Its role is to improve off-page SEO signals, increase topical authority, and help key pages rank for competitive search terms.",
+    applications: [
+      "Product and service landing pages that need stronger authority.",
+      "New websites that need trust signals to compete in search results.",
+      "Content hubs and blog clusters targeting high-intent keywords.",
+      "Local and niche campaigns where contextual citations matter.",
+    ],
+    effectiveness: [
+      "Quality backlinks improve domain credibility and ranking potential.",
+      "Strategic anchors reinforce topical relevance for target pages.",
+      "Long-term link equity supports sustained traffic growth.",
+      "Editorial placements can drive both SEO value and referral traffic.",
+    ],
+    heroLine: "Dominate search results with high-authority, contextual backlinks.",
+    outcome:
+      "Our link building service delivers sustained, long-term growth in organic traffic and a robust backlink profile that outpaces your competitors.",
+    authorityFramework: [
+      {
+        icon: "Search",
+        title: "Discovery & Audit",
+        description: "We analyze your backlink profile and identify high-impact target pages.",
+      },
+      {
+        icon: "Target",
+        title: "Prospecting",
+        description: "We find and vet niche-relevant, high-authority domains for placement.",
+      },
+      {
+        icon: "MessageSquare",
+        title: "Outreach",
+        description: "We conduct manual outreach to site owners to secure editorial placements.",
+      },
+      {
+        icon: "FileText",
+        title: "Reporting",
+        description: "Links go live with strategic anchors, and we provide transparent reporting.",
+      },
+    ],
+  },
+  {
     slug: "content-writing",
     href: "/services/content-writing",
     title: "Content Writing",
@@ -160,7 +160,7 @@ export const marketplaceCategories = [
     count: "5 Services in this category",
     description: "Publish conversion-focused content mapped to search intent and user journey stages.",
     highlights: ["SEO briefs and outlines", "Long-form blogs and landing-page copy"],
-    timeline: "Typical turnaround: 3-7 business days",
+    timeline: "Typical turnaround: 24-48 hours",
     whatItIs:
       "Content writing service creates SEO-ready and conversion-driven copy tailored to your audience, funnel stage, and brand voice.",
     role:

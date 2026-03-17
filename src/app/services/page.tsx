@@ -15,7 +15,7 @@ const serviceIcons: Record<ServiceCategory["title"], LucideIcon> = {
 export const metadata: Metadata = {
   title: "Services | Rankovate",
   description:
-    "Explore SEO, PR, Link Building, and Content Writing services designed to scale visibility, authority, and growth.",
+    "Explore PR, SEO, Link Building, and Content Writing services designed to scale visibility, authority, and growth.",
 };
 
 export default function ServicesPage() {

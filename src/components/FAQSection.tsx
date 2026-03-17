@@ -12,7 +12,7 @@ const faqs = [
   },
   {
     q: "What services does Rankovate provide?",
-    a: "We provide Crypto PR Distribution, SEO & Link Building, Content Writing, AI SEO, and comprehensive Web3 marketing services tailored for blockchain projects.",
+    a: "We provide Crypto PR Distribution, SEO, Link Building, Content Writing, AI SEO, and comprehensive Web3 marketing services tailored for blockchain projects.",
   },
   {
     q: "Does Rankovate guarantee project success or raise funds?",
@@ -28,7 +28,7 @@ const faqs = [
   },
   {
     q: "What's the usual delivery time?",
-    a: "Most services are delivered within 7-14 business days. Press releases can be distributed within 48 hours of approval.",
+    a: "Most services are delivered within 24-48 hours. Press releases can also be distributed within 24-48 hours of approval.",
   },
 ];
 
