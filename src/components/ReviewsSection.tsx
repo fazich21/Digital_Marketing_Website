@@ -1,3 +1,5 @@
+import React from "react";
+
 const reviews = [
   {
     name: "James Morgan",
@@ -64,24 +66,30 @@ const ReviewsSection = () => {
           <div className="pointer-events-none absolute inset-y-0 right-0 z-10 w-24 md:w-32 bg-gradient-to-l from-background via-background/80 to-transparent" />
 
           <div className="overflow-hidden">
-            <div className="flex w-max animate-marquee gap-6 py-2" style={{ animationDuration: "35s" }}>
+            <div className="flex w-max animate-marquee gap-6 py-4" style={{ animationDuration: "35s" }}>
               {reviewTrack.map((r, i) => (
                 <div
                   key={`${r.name}-${i}`}
-                  className="w-[300px] md:w-[360px] shrink-0 rounded-xl border border-border bg-card p-6"
+                  className="w-[300px] md:w-[380px] shrink-0 rounded-2xl border border-border bg-card p-7 hover:border-primary/40 transition-all duration-300 flex flex-col justify-between"
                 >
-                  <p className="text-sm text-muted-foreground leading-relaxed mb-5 italic">"{r.text}"</p>
-                  <div className="flex items-center justify-between gap-3">
-                    <div className="flex items-center gap-2">
+                  <div>
+                    <p className="text-base md:text-lg font-display font-medium text-foreground leading-snug mb-8 tracking-tight">
+                      "{r.text}"
+                    </p>
+                  </div>
+                  <div className="flex items-center justify-between gap-3 pt-4 border-t border-border/50">
+                    <div className="flex items-center gap-3">
                       <img
                         src={r.image}
                         alt={`${r.name} avatar`}
-                        className="w-8 h-8 rounded-full object-cover border border-border"
+                        className="w-10 h-10 rounded-full object-cover border border-border transition-all duration-500"
                         loading="lazy"
                       />
-                      <span className="text-sm font-semibold">{r.name}</span>
+                      <div className="flex flex-col">
+                        <span className="text-sm font-bold text-foreground leading-none mb-1">{r.name}</span>
+                        <span className="text-[10px] text-muted-foreground uppercase tracking-widest">{r.date}</span>
+                      </div>
                     </div>
-                    <span className="text-[10px] text-muted-foreground whitespace-nowrap">{r.date}</span>
                   </div>
                 </div>
               ))}
