@@ -73,7 +73,7 @@ export default async function ServiceDetailPage({ params }: ServicePageProps) {
           <motion.span
             initial={{ opacity: 0, y: 10 }}
             animate={{ opacity: 1, y: 0 }}
-            className="text-base font-medium text-primary flex items-center justify-center md:justify-start gap-2 mb-6"
+            className="text-base font-medium text-primary flex items-center gap-2 mb-6"
           >
             ✦ {service.tag}
           </motion.span>
@@ -139,7 +139,7 @@ export default async function ServiceDetailPage({ params }: ServicePageProps) {
                 <p className="text-lg md:text-xl text-muted-foreground leading-relaxed">
                   {service.whatItIs}
                 </p>
-                <p className="text-lg md:text-xl text-foreground font-medium leading-relaxed border-l-2 border-primary pl-6">
+                <p className="text-lg md:text-xl text-muted-foreground leading-relaxed">
                   {service.role}
                 </p>
               </div>
@@ -171,8 +171,8 @@ export default async function ServiceDetailPage({ params }: ServicePageProps) {
       {/* What You Get Section */}
       <section className="py-24 bg-background">
         <div className="container mx-auto px-4">
-          <div className="text-center mb-16">
-            <span className="text-base font-medium text-primary flex items-center justify-center gap-2 mb-3">
+          <div className="text-left mb-16">
+            <span className="text-base font-medium text-primary flex items-center gap-2 mb-3">
               ✦ DELIVERABLES
             </span>
             <h2 className="text-3xl md:text-5xl font-bold font-display">
