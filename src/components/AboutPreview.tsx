@@ -4,18 +4,18 @@ import { Zap, Cpu, BarChart3 } from "lucide-react";
 const processSteps = [
   {
     icon: Zap,
-    title: "Strategy Overhype",
-    desc: "We don't just plan, we build the strategy that makes your competitors look like they're still in the analog age.",
+    title: "Strategy That Delivers",
+    desc: "Every campaign is guided by insight, precision, and clear objectives to help your brand stand out in a competitive digital landscape.",
   },
   {
     icon: Cpu,
-    title: "Tech-first execution",
-    desc: "Execution is everything. We prioritize technology and efficiency to bring your vision to life at lightning speed.",
+    title: "Built for Technology Brands",
+    desc: "We design and execute campaigns specifically for technology companies, focusing on visibility, relevance, and long-term growth.",
   },
   {
     icon: BarChart3,
-    title: "Transparent results",
-    desc: "No smoke and mirrors. Just real, measurable results that you can track and verify at every step of the way.",
+    title: "Results You Can Trust",
+    desc: "We prioritize transparency at every stage, with clear reporting, verified outcomes, and measurable performance you can rely on.",
   },
 ];
 

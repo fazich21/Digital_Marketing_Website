@@ -8,27 +8,27 @@ import {
 const faqs = [
   {
     q: "What is Rankovate?",
-    a: "Rankovate is a Web3 marketing agency built for crypto startups. We offer two core services: Press Release Distribution, Crypto SEO & Link Building.",
+    a: "Rankovate is a technology-focused SEO and growth marketing agency that helps businesses improve visibility and drive sustainable online growth.",
   },
   {
     q: "What services does Rankovate provide?",
-    a: "We provide Crypto PR Distribution, SEO, Link Building, Content Writing, AI SEO, and comprehensive Web3 marketing services tailored for blockchain projects.",
+    a: "We offer technical SEO, PR and media placements, link building, and growth marketing solutions for technology companies.",
   },
   {
-    q: "Does Rankovate guarantee project success or raise funds?",
-    a: "No. Rankovate provides marketing services only. We don't guarantee fundraising outcomes or project success, but we deliver measurable marketing results.",
+    q: "Do you guarantee results or business outcomes?",
+    a: "We focus on delivering measurable improvements in visibility and traffic, but we do not guarantee specific rankings or business outcomes.",
   },
   {
-    q: "How does Press Release Distribution work?",
-    a: "You provide or we help craft your press release, then we distribute it across our network of 100+ crypto and mainstream media outlets for maximum visibility.",
+    q: "How does press release distribution work?",
+    a: "We create and distribute your news to relevant technology and business publications to increase brand visibility and authority.",
   },
   {
-    q: "What's included in your Crypto SEO service?",
-    a: "Our Crypto SEO service includes keyword research, on-page optimization, link building, content strategy, and monthly reporting tailored for Web3 projects.",
+    q: "What's included in your SEO service?",
+    a: "Our SEO service includes technical audits, keyword strategy, on-page optimization, and authority-building through backlinks and strategic content planning.",
   },
   {
-    q: "What's the usual delivery time?",
-    a: "Most services are delivered within 24-48 hours. Press releases can also be distributed within 24-48 hours of approval.",
+    q: "What is the typical delivery time?",
+    a: "Delivery timelines vary by service, but most projects begin showing measurable progress within a few weeks.",
   },
 ];
 

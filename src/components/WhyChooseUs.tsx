@@ -2,24 +2,19 @@ import { motion } from "framer-motion";
 
 const stats = [
   {
-    tag: "Projects Launched",
-    value: "150+",
-    desc: "From stealth to scale—Rankovate has powered PR and SEO campaigns for top crypto startups, tools, and exchanges.",
-  },
-  {
     tag: "Media Placements",
-    value: "1,200+",
-    desc: "Your story. Our network. Published on tier-1 crypto sites and global platforms via powerful press and SEO distribution.",
+    value: "150+",
+    desc: "We position brands across credible technology and business publications through targeted outreach and strategic distribution.",
   },
   {
     tag: "Satisfied Clients",
-    value: "500+",
-    desc: "Trusted by Web3 founders globally — delivering results that build credibility and long-term growth.",
+    value: "1,200+",
+    desc: "Our clients, from emerging startups to established tech firms, work with us to improve search visibility, attract qualified traffic, and achieve consistent growth.",
   },
   {
-    tag: "Industry Mentions",
-    value: "50+",
-    desc: "Recognized across major crypto media and marketing platforms for consistent, high-quality execution.",
+    tag: "Industry Recognition",
+    value: "500+",
+    desc: "Our work is recognized across technology communities and platforms for delivering effective strategies, measurable performance, and long-term results.",
   },
 ];
 
@@ -28,13 +23,16 @@ const WhyChooseUs = () => {
     <section className="py-16 bg-card">
       <div className="container mx-auto px-4">
         <span className="text-base font-medium text-primary flex items-center gap-2 mb-3">
-          ✦ WHY CHOOSE US
+          âœ¦ PROJECTS DELIVERED
         </span>
-        <h2 className="text-3xl md:text-5xl font-bold font-display mb-12">
-          Why <span className="text-primary">Rankovate</span> Stands Out
+        <h2 className="text-3xl md:text-5xl font-bold font-display mb-5">
+          Campaigns Built for <span className="text-primary">Measurable Growth</span>
         </h2>
+        <p className="text-muted-foreground max-w-3xl mb-12">
+          We partner with technology startups and growing companies to launch and scale SEO and growth marketing initiatives that deliver real business impact.
+        </p>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
           {stats.map((s, i) => (
             <motion.div
               key={s.tag}
@@ -45,7 +43,7 @@ const WhyChooseUs = () => {
               className="rounded-xl bg-secondary border border-border p-8"
             >
               <span className="text-sm font-medium text-primary flex items-center gap-2 mb-4">
-                ✦ {s.tag}
+                âœ¦ {s.tag}
               </span>
               <div className="text-5xl md:text-6xl font-bold font-display text-primary mb-4">
                 {s.value}

@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { ArrowRight, Link2, Newspaper, PenTool, Search, type LucideIcon } from "lucide-react";
+import { ArrowRight, Link2, Newspaper, Search, type LucideIcon } from "lucide-react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { marketplaceCategories, type ServiceCategory } from "@/constants/marketplaceCategories";
@@ -9,13 +9,12 @@ const serviceIcons: Record<ServiceCategory["title"], LucideIcon> = {
   "Link Building": Link2,
   PR: Newspaper,
   SEO: Search,
-  "Content Writing": PenTool,
 };
 
 export const metadata: Metadata = {
   title: "Services | Rankovate",
   description:
-    "Explore PR, SEO, Link Building, and Content Writing services designed to scale visibility, authority, and growth.",
+    "Explore PR, SEO, and Link Building services designed to scale visibility, authority, and sustainable growth.",
 };
 
 export default function ServicesPage() {
@@ -42,7 +41,7 @@ export default function ServicesPage() {
 
       <section className="py-12">
         <div className="container mx-auto px-4">
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
             {marketplaceCategories.map((service) => {
               const Icon = serviceIcons[service.title];
 

@@ -43,12 +43,12 @@ const contactFaqs = [
   {
     question: "Do you accept international clients?",
     answer:
-      "Yes, we work with Web3 and blockchain teams globally. You can contact us via Telegram or form from any region.",
+      "Yes, we work with technology brands globally. You can contact us via Telegram or form from any region.",
   },
   {
     question: "Can I contact you for only one service?",
     answer:
-      "Absolutely. You can reach out for a single service like PR, SEO, Link Building, or Content Writing, and scale later if needed.",
+      "Absolutely. You can reach out for a single service like PR, SEO, or Link Building, and scale later if needed.",
   },
 ];
 
@@ -71,20 +71,19 @@ const Contact = () => {
       <section className="pt-32 pb-16">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
-            {/* Info */}
             <motion.div
               initial={{ opacity: 0, x: -20 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.6 }}
             >
               <span className="text-sm font-medium text-primary flex items-center gap-2 mb-3">
-                ✦ CONTACT US
+                âœ¦ CONTACT US
               </span>
               <h1 className="text-4xl md:text-5xl font-bold font-display mb-4">
-                Our team is ready to <span className="text-primary">help</span>
+                Our Team Is Here to <span className="text-primary">Support You</span>
               </h1>
               <p className="text-muted-foreground mb-10 max-w-md">
-                Looking for crypto marketing, PR distribution, or SEO support? Rankovate's team is here to help Web3 and blockchain projects grow.
+                Looking for expert SEO, PR distribution, or growth marketing support? Rankovate works with technology companies to improve visibility, strengthen search performance, and drive measurable growth. Get in touch today for prompt assistance.
               </p>
 
               <div className="space-y-6">
@@ -117,7 +116,6 @@ const Contact = () => {
               </div>
             </motion.div>
 
-            {/* Form */}
             <motion.div
               initial={{ opacity: 0, x: 20 }}
               animate={{ opacity: 1, x: 0 }}
@@ -190,7 +188,7 @@ const Contact = () => {
 
           <div className="mt-12 max-w-3xl mx-auto">
             <span className="text-sm font-medium text-primary flex items-center gap-2 mb-3">
-              ✦ CONTACT FAQS
+              âœ¦ CONTACT FAQS
             </span>
             <h2 className="text-3xl md:text-5xl font-bold font-display mb-12">
               Contacting <span className="text-primary">Rankovate</span>

@@ -9,18 +9,18 @@ const ServicesSection = () => {
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-12">
           <div>
             <h2 className="text-3xl md:text-5xl font-bold font-display">
-              Explore the <span className="text-primary">marketplace.</span>
+              Explore Our <span className="text-primary">SEO</span> & Growth Services
             </h2>
           </div>
           <Link
             href="/services"
             className="mt-4 md:mt-0 rounded-full border border-border px-6 py-2 text-sm font-medium text-foreground hover:bg-secondary transition-colors"
           >
-            View all services
+            Explore All Services
           </Link>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
           {marketplaceCategories.map((service, i) => {
             const shortDescription = service.description.split(".")[0] + ".";
             const shortHighlights = service.highlights.slice(0, 1);

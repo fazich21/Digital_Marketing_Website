@@ -10,26 +10,33 @@ const values = [
   {
     icon: Target,
     title: "Our Mission",
-    desc: "We help Web3 startups grow through press coverage, search visibility, and influencer amplification — built to scale long-term.",
+    desc: "We help technology companies grow through strategic SEO, targeted media exposure, and data-driven marketing built for long-term, sustainable scale.",
   },
   {
     icon: Eye,
     title: "Our Vision",
-    desc: "To be the go-to launch engine for crypto founders — delivering trusted placements, organic rankings, and real user momentum.",
+    desc: "To become a trusted growth partner for technology brands, delivering consistent visibility, strong search performance, and measurable business impact.",
   },
   {
     icon: Gem,
-    title: "Our Value",
-    desc: "No shortcuts. No bots. Just smart marketing backed by real metrics, premium media, and scalable Web3 native execution.",
+    title: "Our Values",
+    desc: "We believe in doing things the right way: no shortcuts, no artificial tactics, and a strong focus on data, quality execution, and scalable growth.",
   },
 ];
 
 const features = [
-  { title: "Visibility That Drives Listings", desc: "Get seen where it matters most — exchanges, aggregators, and media." },
-  { title: "Scalable Growth at Every Stage", desc: "From seed round to market leader, we grow with you." },
-  { title: "Cost-Efficient Execution", desc: "Lean campaigns, maximum ROI. No bloated retainers." },
-  { title: "Credible Brand Presence", desc: "Tier-1 placements that build trust and authority." },
-  { title: "Faster Go-to-Market Edge", desc: "Launch faster with ready-made distribution and media networks." },
+  {
+    title: "Strategic Distribution",
+    desc: "Expand your visibility through relevant, high-impact channels where your audience already pays attention.",
+  },
+  {
+    title: "Strong Rankings",
+    desc: "Combine technical SEO and authority signals to build durable search performance that compounds over time.",
+  },
+  {
+    title: "Measurable Impact",
+    desc: "Track every campaign through transparent reporting and clear outcomes you can trust.",
+  },
 ];
 
 const About = () => {
@@ -37,22 +44,20 @@ const About = () => {
     <div className="min-h-screen bg-background">
       <Navbar />
 
-      {/* Hero */}
       <section className="pt-32 pb-16">
         <div className="container mx-auto px-4">
           <span className="text-base font-medium text-primary flex items-center gap-2 mb-3">
-            ✦ OUR APPROACH
+            âœ¦ OUR APPROACH
           </span>
-          <h1 className="text-3xl md:text-5xl font-bold font-display mb-12">
-            Our <span className="text-primary">Approach</span> to Web3 Growth
+          <h1 className="text-3xl md:text-5xl font-bold font-display mb-6">
+            Our <span className="text-primary">Approach</span>
           </h1>
           <p className="text-lg text-muted-foreground max-w-2xl">
-            At Rankovate, we execute lean, high-impact campaigns combining crypto PR & SEO — focused on traction, not vanity hype.
+            Driven by Strategy. Powered by Precision.
           </p>
         </div>
       </section>
 
-      {/* Mission/Vision/Value */}
       <section className="py-10">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -79,18 +84,18 @@ const About = () => {
         </div>
       </section>
 
-      {/* Features */}
       <section className="py-12 bg-card">
         <div className="container mx-auto px-4">
           <span className="text-base font-medium text-primary flex items-center gap-2 mb-3">
-            ✦ WHAT MAKES US DIFFERENT?
+            âœ¦ WHAT MAKES US DIFFERENT?
           </span>
           <h2 className="text-3xl md:text-5xl font-bold font-display mb-4">
-            Why <span className="text-primary">Web3</span> Projects Grow
-            <br />Better with Rankovate
+            Built for Visibility
+            <br />
+            That Drives <span className="text-primary">Growth</span>
           </h2>
           <p className="text-muted-foreground max-w-2xl mb-12">
-            From press release distribution across top crypto media, to SEO & link building for higher Google visibility — Rankovate supports your project's reach across the Web3 space.
+            Strategic distribution. Strong rankings. Measurable impact. We combine search optimization with targeted media exposure across high-impact channels.
           </p>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
@@ -111,31 +116,31 @@ const About = () => {
         </div>
       </section>
 
-      {/* Distribute/Rank/Amplify */}
       <section className="py-16">
         <div className="container mx-auto px-4">
           <span className="text-sm font-medium text-primary flex items-center gap-2 mb-3">
-            ✦ Built to Make Noise Where It Matters
+            âœ¦ OUR EXECUTION MODEL
           </span>
           <h2 className="text-3xl md:text-5xl font-bold font-display mb-6">
-            We <span className="text-primary">distribute</span>. We <span className="text-primary">rank</span>.
-            <br />We <span className="text-primary">amplify</span>.
+            Built for Visibility That
+            <br />
+            Creates <span className="text-primary">Sustained Growth</span>
           </h2>
           <p className="text-muted-foreground max-w-2xl mb-12">
-            At Rankovate, we help Web3 projects grow faster by getting them featured, ranked, and promoted across the channels that drive results.
+            We help technology brands strengthen authority and scale reach through strategic PR, link building, and distribution designed to perform.
           </p>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <div className="rounded-xl border border-border bg-card p-8">
-              <h3 className="font-bold font-display text-lg mb-3">Tier-1 PR Distribution & Backlinks</h3>
+              <h3 className="font-bold font-display text-lg mb-3">Authority-Driven PR & Link Building</h3>
               <p className="text-sm text-muted-foreground">
-                We get your PRs placed on top crypto media and build SEO-rich backlinks — without touching the writing.
+                We place your brand on credible technology platforms while strengthening your SEO through high-quality, relevant backlinks.
               </p>
             </div>
             <div className="rounded-xl border border-border bg-card p-8">
-              <h3 className="font-bold font-display text-lg mb-3">Syndication That Scales</h3>
+              <h3 className="font-bold font-display text-lg mb-3">Distribution Designed to Scale</h3>
               <p className="text-sm text-muted-foreground">
-                You bring the content — we handle full syndication to crypto news platforms and niche audiences.
+                With a focus on reach and relevance, we ensure your content is delivered to the right platforms and audiences for sustained growth.
               </p>
             </div>
           </div>

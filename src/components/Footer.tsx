@@ -12,7 +12,6 @@ const services = [
   { label: "PR", href: "/services/pr" },
   { label: "SEO", href: "/services/seo" },
   { label: "Link Building", href: "/services/link-building" },
-  { label: "Content Writing", href: "/services/content-writing" },
 ];
 
 const industries = [

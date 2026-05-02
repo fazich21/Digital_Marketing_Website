@@ -5,8 +5,7 @@ import {
   Link2, Newspaper, PenTool, Search,
   Radio, Target, MessageSquare, FileText,
   Activity, Send, Stethoscope, Map as MapIcon,
-  TrendingUp, BarChart3, Lightbulb, List,
-  Edit3, CheckCircle, type LucideIcon,
+  TrendingUp, BarChart3, CheckCircle, type LucideIcon,
   ArrowRight
 } from "lucide-react";
 import Navbar from "@/components/Navbar";
@@ -18,14 +17,13 @@ const serviceIcons: Record<ServiceCategory["title"], LucideIcon> = {
   "Link Building": Link2,
   PR: Newspaper,
   SEO: Search,
-  "Content Writing": PenTool,
 };
 
 const allIcons: Record<string, LucideIcon> = {
   Search, Target, MessageSquare, FileText,
   Radio, PenTool, Send, Activity,
   Stethoscope, Map: MapIcon, TrendingUp, BarChart3,
-  Lightbulb, List, Edit3, CheckCircle,
+  CheckCircle,
 };
 
 interface ServicePageProps {

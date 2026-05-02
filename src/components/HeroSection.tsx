@@ -1,31 +1,28 @@
 import { motion } from "framer-motion";
 import Link from "next/link";
-import { CheckCircle, ArrowRight } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
-const features = [
-  "White label SEO services with superfast turnarounds",
-  "Unrivalled quality for SEO agencies and teams",
-  "ROI & margins designed for SEO resellers",
-];
+const heroSubtext =
+  "We help technology brands increase search visibility and drive sustainable organic growth through strategic SEO and data-driven marketing.";
 
 const sliderItems = [
-  "Infographic Design",
-  "Media Placements DR 50+",
-  "Social Video Ads",
-  "Explainer Videos",
-  "Blog Writing Service",
-  "Article Writing",
-  "Product Descriptions",
+  "Technical SEO Audits",
+  "On-Page Optimization",
+  "Strategic Keyword Research",
+  "Press Release Distribution",
+  "Media Outreach Campaigns",
+  "Authority Link Building",
+  "Contextual Backlinks",
+  "SEO Performance Reporting",
+  "Competitor Gap Analysis",
+  "Digital PR Placements",
+  "Organic Traffic Growth",
+  "SERP Visibility Scaling",
   "Keyword Research",
-  "Multilingual Outreach",
-  "Infographic Outreach",
-  "Content Syndication",
-  "Website Copywriting",
-  "Blogger Outreach",
-  "Press Release Writing",
-  "Local Citation Building",
-  "Niche Edits",
+  "Outreach Strategy",
+  "Market Visibility Campaigns",
+  "Search Growth Operations",
 ];
 
 const HeroSection = () => {
@@ -43,12 +40,11 @@ const HeroSection = () => {
               transition={{ duration: 0.7 }}
             >
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold font-display leading-tight mb-6">
-                Scale your{" "}
-                <span className="text-primary">SEO.</span>
+                Strategic <span className="text-primary">SEO</span> & Growth
                 <br />
-                Not your
+                Marketing Agency for
                 <br />
-                headcount.
+                Technology Brands
               </h1>
             </motion.div>
 
@@ -56,14 +52,11 @@ const HeroSection = () => {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.7, delay: 0.3 }}
-              className="space-y-3 mb-8"
+              className="mb-8 max-w-2xl"
             >
-              {features.map((f) => (
-                <div key={f} className="flex items-center gap-3">
-                  <CheckCircle className="w-5 h-5 text-primary flex-shrink-0" />
-                  <span className="text-sm text-muted-foreground">{f}</span>
-                </div>
-              ))}
+              <p className="text-base md:text-lg text-muted-foreground leading-relaxed">
+                {heroSubtext}
+              </p>
             </motion.div>
 
             <motion.div
@@ -90,8 +83,8 @@ const HeroSection = () => {
                 variant="outline"
                 className="rounded-full text-base px-8 border-border text-foreground hover:bg-secondary hover:text-primary"
               >
-                <Link href="/contact">
-                  Lets Grow <ArrowRight className="ml-2 w-4 h-4" />
+                <Link href="/services">
+                  Explore All Services <ArrowRight className="ml-2 w-4 h-4" />
                 </Link>
               </Button>
             </motion.div>
