@@ -47,7 +47,7 @@ const About = () => {
       <section className="pt-32 pb-16">
         <div className="container mx-auto px-4">
           <span className="text-base font-medium text-primary flex items-center gap-2 mb-3">
-            âœ¦ OUR APPROACH
+            OUR APPROACH
           </span>
           <h1 className="text-3xl md:text-5xl font-bold font-display mb-6">
             Our <span className="text-primary">Approach</span>
@@ -87,7 +87,7 @@ const About = () => {
       <section className="py-12 bg-card">
         <div className="container mx-auto px-4">
           <span className="text-base font-medium text-primary flex items-center gap-2 mb-3">
-            âœ¦ WHAT MAKES US DIFFERENT?
+            WHAT MAKES US DIFFERENT?
           </span>
           <h2 className="text-3xl md:text-5xl font-bold font-display mb-4">
             Built for Visibility
@@ -119,7 +119,7 @@ const About = () => {
       <section className="py-16">
         <div className="container mx-auto px-4">
           <span className="text-sm font-medium text-primary flex items-center gap-2 mb-3">
-            âœ¦ OUR EXECUTION MODEL
+            OUR EXECUTION MODEL
           </span>
           <h2 className="text-3xl md:text-5xl font-bold font-display mb-6">
             Built for Visibility That
