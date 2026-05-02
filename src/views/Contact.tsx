@@ -77,7 +77,7 @@ const Contact = () => {
               transition={{ duration: 0.6 }}
             >
               <span className="text-sm font-medium text-primary flex items-center gap-2 mb-3">
-                âœ¦ CONTACT US
+                CONTACT US
               </span>
               <h1 className="text-4xl md:text-5xl font-bold font-display mb-4">
                 Our Team Is Here to <span className="text-primary">Support You</span>
@@ -160,7 +160,7 @@ const Contact = () => {
                     />
                   </div>
                   <div>
-                    <label className="text-sm font-medium mb-1.5 block">E-mail</label>
+                    <label className="text-sm font-medium mb-1.5 block">Email</label>
                     <Input
                       type="email"
                       value={form.email}
@@ -188,7 +188,7 @@ const Contact = () => {
 
           <div className="mt-12 max-w-3xl mx-auto">
             <span className="text-sm font-medium text-primary flex items-center gap-2 mb-3">
-              âœ¦ CONTACT FAQS
+              CONTACT FAQS
             </span>
             <h2 className="text-3xl md:text-5xl font-bold font-display mb-12">
               Contacting <span className="text-primary">Rankovate</span>

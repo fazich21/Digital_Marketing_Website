@@ -1,6 +1,10 @@
 const clients = [
-  "Crytocoin", "ION Mining", "DNMiner", "DigitMiner", "ARTEMIS", "Bitget",
-  "Crytocoin", "ION Mining", "DNMiner", "DigitMiner", "ARTEMIS", "Bitget",
+  "Crytocoin",
+  "ION Mining",
+  "DNMiner",
+  "DigitMiner",
+  "ARTEMIS",
+  "Bitget",
 ];
 
 const ClientsSection = () => {
@@ -20,13 +24,17 @@ const ClientsSection = () => {
         </div>
 
         <div className="overflow-hidden">
-          <div className="flex gap-8 animate-[marquee_8s_linear_infinite] sm:animate-[marquee_12s_linear_infinite] md:animate-[marquee_18s_linear_infinite] lg:animate-[marquee_26s_linear_infinite]">
-            {clients.map((c, i) => (
-              <div
-                key={i}
-                className="flex-shrink-0 rounded-xl border border-border bg-secondary px-10 py-5 text-base font-semibold text-foreground whitespace-nowrap"
-              >
-                {c}
+          <div className="inline-flex w-max will-change-transform animate-[marquee_8s_linear_infinite] sm:animate-[marquee_12s_linear_infinite] md:animate-[marquee_18s_linear_infinite] lg:animate-[marquee_26s_linear_infinite]">
+            {[0, 1].map((group) => (
+              <div key={group} className="flex shrink-0" aria-hidden={group === 1}>
+                {clients.map((c, i) => (
+                  <div
+                    key={`${group}-${c}-${i}`}
+                    className="mr-8 flex-shrink-0 rounded-xl border border-border bg-secondary px-10 py-5 text-base font-semibold text-foreground whitespace-nowrap"
+                  >
+                    {c}
+                  </div>
+                ))}
               </div>
             ))}
           </div>
