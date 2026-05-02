@@ -20,7 +20,7 @@ const ClientsSection = () => {
         </div>
 
         <div className="overflow-hidden">
-          <div className="flex gap-8 animate-[marquee_15s_linear_infinite] md:animate-[marquee_25s_linear_infinite]">
+          <div className="flex gap-8 animate-[marquee_8s_linear_infinite] sm:animate-[marquee_12s_linear_infinite] md:animate-[marquee_18s_linear_infinite] lg:animate-[marquee_26s_linear_infinite]">
             {clients.map((c, i) => (
               <div
                 key={i}
