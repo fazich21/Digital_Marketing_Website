@@ -20,7 +20,7 @@ const MediaPartners = () => {
 
         {/* Marquee */}
         <div className="overflow-hidden">
-          <div className="flex animate-marquee gap-8">
+          <div className="flex gap-8 animate-[marquee_16s_linear_infinite] md:animate-[marquee_30s_linear_infinite]">
             {partners.map((p, i) => (
               <div
                 key={i}
