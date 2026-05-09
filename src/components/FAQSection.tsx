@@ -5,7 +5,18 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 
-const faqs = [
+interface FAQ {
+  q: string;
+  a: string;
+}
+
+interface FAQSectionProps {
+  faqs?: FAQ[];
+  title?: string;
+  subtitle?: string;
+}
+
+const defaultFaqs = [
   {
     q: "What is Rankovate?",
     a: "Rankovate is a technology-focused SEO and growth marketing agency that helps businesses improve visibility and drive sustainable online growth.",
@@ -32,15 +43,28 @@ const faqs = [
   },
 ];
 
-const FAQSection = () => {
+const FAQSection = ({ 
+  faqs = defaultFaqs, 
+  title = "About Us — FAQ's",
+  subtitle = "FAQS"
+}: FAQSectionProps) => {
   return (
     <section className="py-16 bg-card">
       <div className="container mx-auto px-4 max-w-3xl">
         <span className="text-base font-medium text-primary flex items-center gap-2 mb-3">
-          ✦ FAQS
+          ✦ {subtitle}
         </span>
         <h2 className="text-3xl md:text-5xl font-bold font-display mb-12">
-          About Us — <span className="text-primary">FAQ's</span>
+          {title.split(" — ").map((part, i) => (
+            <span key={i}>
+              {i > 0 && " — "}
+              {part.includes("FAQ's") ? (
+                <span className="text-primary">{part}</span>
+              ) : (
+                part
+              )}
+            </span>
+          ))}
         </h2>
 
         <Accordion type="single" collapsible className="space-y-3">

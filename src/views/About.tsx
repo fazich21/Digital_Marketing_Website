@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Target, Eye, Gem } from "lucide-react";
+import { Target, Eye, Gem, BarChart3 } from "lucide-react";
 import Navbar from "@/components/Navbar";
 import WhyChooseUs from "@/components/WhyChooseUs";
 import ReviewsSection from "@/components/ReviewsSection";
@@ -46,15 +46,71 @@ const About = () => {
 
       <section className="pt-32 pb-16">
         <div className="container mx-auto px-4">
-          <span className="text-base font-medium text-primary flex items-center gap-2 mb-3">
-            OUR APPROACH
-          </span>
-          <h1 className="text-3xl md:text-5xl font-bold font-display mb-6">
-            Our <span className="text-primary">Approach</span>
-          </h1>
-          <p className="text-lg text-muted-foreground max-w-2xl">
-            Driven by Strategy. Powered by Precision.
-          </p>
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div>
+              <span className="text-base font-medium text-primary flex items-center gap-2 mb-3">
+                OUR APPROACH
+              </span>
+              <h1 className="text-3xl md:text-5xl font-bold font-display mb-6">
+                Our <span className="text-primary">Approach</span>
+              </h1>
+              <p className="text-lg text-muted-foreground max-w-2xl">
+                Driven by Strategy. Powered by Precision.
+              </p>
+            </div>
+            <motion.div
+              initial={{ opacity: 0, x: 20 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.6 }}
+              className="relative rounded-2xl border border-border bg-card p-6 overflow-hidden"
+            >
+              <div className="absolute top-0 right-0 w-32 h-32 bg-primary/10 blur-3xl" />
+              <div className="relative z-10">
+                <div className="flex items-center justify-between mb-8">
+                  <div className="flex gap-2">
+                    <div className="w-3 h-3 rounded-full bg-red-500/50" />
+                    <div className="w-3 h-3 rounded-full bg-yellow-500/50" />
+                    <div className="w-3 h-3 rounded-full bg-green-500/50" />
+                  </div>
+                  <BarChart3 className="w-5 h-5 text-primary" />
+                </div>
+                <div className="h-64 flex items-end justify-between gap-2 px-2">
+                  {[40, 65, 45, 80, 55, 90, 100].map((height, i) => (
+                    <motion.div
+                      key={i}
+                      initial={{ height: 0 }}
+                      whileInView={{ height: `${height}%` }}
+                      viewport={{ once: true }}
+                      transition={{ duration: 1, delay: i * 0.1, ease: "easeOut" }}
+                      className="flex-1 bg-gradient-to-t from-primary/40 to-primary rounded-t-lg relative group/bar"
+                    >
+                      <div className="absolute -top-10 left-1/2 -translate-x-1/2 bg-background border border-border px-2 py-1 rounded text-[10px] font-bold opacity-0 group-hover/bar:opacity-100 transition-opacity">
+                        {height}%
+                      </div>
+                    </motion.div>
+                  ))}
+                </div>
+                <div className="mt-4 flex justify-between text-[10px] font-medium text-muted-foreground uppercase tracking-widest px-1">
+                  <span>Mon</span>
+                  <span>Tue</span>
+                  <span>Wed</span>
+                  <span>Thu</span>
+                  <span>Fri</span>
+                  <span>Sat</span>
+                  <span>Sun</span>
+                </div>
+                <div className="mt-6 flex justify-between items-end">
+                  <div>
+                    <p className="text-sm font-medium text-muted-foreground">Organic Visibility</p>
+                    <p className="text-2xl font-bold text-primary">+145%</p>
+                  </div>
+                  <div className="h-12 w-24 bg-primary/20 rounded-lg flex items-center justify-center">
+                    <span className="text-[10px] font-bold text-primary uppercase tracking-tighter">Growth Metric</span>
+                  </div>
+                </div>
+              </div>
+            </motion.div>
+          </div>
         </div>
       </section>
 

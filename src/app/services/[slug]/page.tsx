@@ -10,6 +10,7 @@ import {
 } from "lucide-react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import FAQSection from "@/components/FAQSection";
 import { marketplaceCategories, type ServiceCategory } from "@/constants/marketplaceCategories";
 import * as motion from "framer-motion/client";
 
@@ -68,7 +69,7 @@ export default async function ServiceDetailPage({ params }: ServicePageProps) {
       <Navbar />
 
       {/* Hero Section */}
-      <section className="pt-32 pb-20 border-b border-border/50">
+      <section className="pt-32 pb-12 border-b border-border/50">
         <div className="container mx-auto px-4 text-center md:text-left">
           <motion.span
             initial={{ opacity: 0, y: 10 }}
@@ -121,7 +122,7 @@ export default async function ServiceDetailPage({ params }: ServicePageProps) {
       </section>
 
       {/* What It Is Section */}
-      <section className="py-24 bg-card relative overflow-hidden">
+      <section className="py-12 bg-card relative overflow-hidden">
         <div className="container mx-auto px-4 relative z-10">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
             <motion.div
@@ -169,7 +170,7 @@ export default async function ServiceDetailPage({ params }: ServicePageProps) {
       </section>
 
       {/* What You Get Section */}
-      <section className="py-24 bg-background">
+      <section className="py-12 bg-background">
         <div className="container mx-auto px-4">
           <div className="text-left mb-16">
             <span className="text-base font-medium text-primary flex items-center gap-2 mb-3">
@@ -212,7 +213,7 @@ export default async function ServiceDetailPage({ params }: ServicePageProps) {
       </section>
 
       {/* Authority Framework Section */}
-      <section className="py-24 bg-secondary/30 relative overflow-hidden">
+      <section className="py-12 bg-secondary/30 relative overflow-hidden">
         <div className="container mx-auto px-4 relative z-10">
           <div className="mb-16">
             <span className="text-base font-medium text-primary flex items-center gap-2 mb-3">
@@ -254,7 +255,7 @@ export default async function ServiceDetailPage({ params }: ServicePageProps) {
       </section>
 
       {/* Effectiveness Section */}
-      <section className="py-24 bg-card">
+      <section className="py-12 bg-card">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
             <Link href="/contact" className="block w-full h-full">
@@ -307,6 +308,12 @@ export default async function ServiceDetailPage({ params }: ServicePageProps) {
           </div>
         </div>
       </section>
+
+      <FAQSection 
+        faqs={service.faqs} 
+        title={`${service.title} — FAQ's`}
+        subtitle={`${service.title.toUpperCase()} FAQS`}
+      />
 
       <Footer />
     </div>

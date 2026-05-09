@@ -3,6 +3,7 @@ import Link from "next/link";
 import { ArrowRight, Link2, Newspaper, Search, type LucideIcon } from "lucide-react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import FAQSection from "@/components/FAQSection";
 import { marketplaceCategories, type ServiceCategory } from "@/constants/marketplaceCategories";
 
 const serviceIcons: Record<ServiceCategory["title"], LucideIcon> = {
@@ -66,6 +67,8 @@ export default function ServicesPage() {
           </div>
         </div>
       </section>
+
+      <FAQSection />
 
       <Footer />
     </div>

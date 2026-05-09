@@ -15,13 +15,11 @@ const services = [
 ];
 
 const industries = [
-  "Web3 Marketing",
-  "AI Crypto Marketing",
-  "Crypto Exchange Marketing",
-  "Metaverse Marketing",
-  "GameFi Marketing",
-  "NFT Marketing",
-  "DeFi Marketing",
+  "SaaS",
+  "AI",
+  "Fintech",
+  "Cyber Security",
+  "Robotics",
 ];
 
 const Footer = () => {

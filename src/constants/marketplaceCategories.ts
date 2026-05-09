@@ -35,6 +35,20 @@ export const marketplaceCategories = [
       "Increase brand credibility and reach with strategic press release distribution built for long-term visibility.",
     outcome:
       "Our press release distribution service expands your media reach, strengthens brand authority, and delivers measurable visibility gains through transparent reporting.",
+    faqs: [
+      {
+        q: "How many publications will my press release be on?",
+        a: "We target a minimum of 5-10 high-authority technology and business publications, depending on the relevance and package.",
+      },
+      {
+        q: "Do you write the press release or do I?",
+        a: "We can do both. Most clients prefer us to craft the narrative to ensure it meets editorial standards and maximizes pickup.",
+      },
+      {
+        q: "How long does it take to see the placements live?",
+        a: "Typically, placements begin appearing within 48 to 72 hours after the distribution is initiated.",
+      },
+    ],
     authorityFramework: [
       {
         icon: "Radio",
@@ -88,6 +102,20 @@ export const marketplaceCategories = [
       "Climb search rankings with a data-driven SEO strategy built for scaling technology brands.",
     outcome:
       "We deliver a technically sound, fast website that captures high-intent traffic and supports long-term organic growth.",
+    faqs: [
+      {
+        q: "How long does it take to see results from SEO?",
+        a: "SEO is a compounding strategy. While technical fixes can show impact quickly, significant ranking improvements usually take 3-6 months.",
+      },
+      {
+        q: "Do you guarantee the #1 spot on Google?",
+        a: "No reputable agency can guarantee #1 rankings. We focus on sustainable growth, visibility, and high-quality traffic that converts.",
+      },
+      {
+        q: "What is included in a technical SEO audit?",
+        a: "We analyze site speed, mobile responsiveness, crawlability, indexing issues, and core web vitals to ensure search engine health.",
+      },
+    ],
     authorityFramework: [
       {
         icon: "Stethoscope",
@@ -148,6 +176,20 @@ export const marketplaceCategories = [
       "Strengthen authority and rankings with ethical, high-impact link building designed for long-term SEO growth.",
     outcome:
       "Our link building service improves authority, visibility, and organic performance through contextual placements and transparent reporting.",
+    faqs: [
+      {
+        q: "Are the backlinks permanent?",
+        a: "We focus on securing high-quality, permanent contextual links. While we don't control external sites forever, we aim for long-term placements.",
+      },
+      {
+        q: "Is your link building 'white-hat'?",
+        a: "Yes. We use manual outreach and relationship-based strategies to secure relevant links. We do not use PBNs or automated spam tactics.",
+      },
+      {
+        q: "How do you choose which sites to get links from?",
+        a: "We evaluate sites based on Domain Authority, relevance to your niche, organic traffic, and editorial quality.",
+      },
+    ],
     authorityFramework: [
       {
         icon: "Target",
