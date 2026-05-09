@@ -11,7 +11,7 @@ interface FAQ {
 }
 
 interface FAQSectionProps {
-  faqs?: FAQ[];
+  faqs?: ReadonlyArray<FAQ>;
   title?: string;
   subtitle?: string;
 }
