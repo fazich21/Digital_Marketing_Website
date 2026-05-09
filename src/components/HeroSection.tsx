@@ -27,12 +27,12 @@ const sliderItems = [
 
 const HeroSection = () => {
   return (
-    <section className="relative min-h-screen flex items-center pt-20 overflow-hidden">
+    <section className="relative min-h-screen pt-20 md:pt-24 overflow-hidden">
       {/* Background glow */}
       <div className="absolute top-1/4 -right-32 w-96 h-96 bg-primary/10 rounded-full blur-3xl" />
 
       <div className="container mx-auto px-4 relative z-10">
-        <div className="grid grid-cols-1 lg:grid-cols-[0.95fr_1.05fr] gap-12 lg:gap-16 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-[0.95fr_1.05fr] gap-12 lg:gap-16 items-start">
           <div className="max-w-3xl">
             <motion.div
               initial={{ opacity: 0, y: 30 }}
@@ -94,14 +94,14 @@ const HeroSection = () => {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.25 }}
-            className="relative w-full max-w-[900px] mx-auto lg:mx-0 lg:justify-self-end"
+            className="relative w-full max-w-[900px] mx-auto lg:mx-0 lg:justify-self-end lg:-mt-6"
           >
             <div className="relative rounded-3xl bg-card overflow-hidden shadow-2xl">
               <div className="absolute inset-0 bg-gradient-to-br from-primary/10 via-transparent to-transparent" />
               <div className="absolute -top-24 -right-20 w-56 h-56 rounded-full bg-primary/15 blur-3xl" />
               <div className="pointer-events-none absolute inset-y-0 left-0 z-30 w-14 md:w-20 bg-gradient-to-r from-background via-background/60 to-transparent" />
               <div className="pointer-events-none absolute inset-y-0 right-0 z-30 w-14 md:w-20 bg-gradient-to-l from-background via-background/60 to-transparent" />
-              <div className="relative z-20 h-[520px] md:h-[620px] px-2 pt-12 pb-8">
+              <div className="relative z-20 h-[520px] md:h-[620px] px-2 pt-6 pb-8">
                 <div className="grid h-full grid-rows-3 gap-2">
                   <div className="overflow-hidden">
                     <motion.div
