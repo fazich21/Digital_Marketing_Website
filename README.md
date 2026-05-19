@@ -1,4 +1,4 @@
-# Rankovate (Next.js 16)
+# Laserrank (Next.js 16)
 
 This project is built with **Next.js 16** using the **App Router**.
 

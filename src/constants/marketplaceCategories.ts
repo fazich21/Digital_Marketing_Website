@@ -17,7 +17,7 @@ export const marketplaceCategories = [
     whatItIs:
       "Press release distribution is an effective way to build brand credibility and increase visibility. Whether you are launching a product, announcing updates, or forming partnerships, your business benefits from being featured on trusted media platforms.",
     role:
-      "At Rankovate, we secure strategic press coverage across leading technology and business publications, along with a wide network of global media outlets. Our approach is designed to expand your reach, strengthen brand authority, and support long-term growth.",
+      "At Laserrank, we secure strategic press coverage across leading technology and business publications, along with a wide network of global media outlets. Our approach is designed to expand your reach, strengthen brand authority, and support long-term growth.",
     applications: [
       "Product launches that need immediate visibility and trusted coverage.",
       "Company updates or milestones that require strong media amplification.",
@@ -158,7 +158,7 @@ export const marketplaceCategories = [
     whatItIs:
       "Link building is the process of acquiring high-quality backlinks from relevant and authoritative websites. These links signal trust and authority to search engines, helping improve rankings and overall visibility.",
     role:
-      "At Rankovate, we focus on ethical, high-impact link building strategies that support long-term SEO growth.",
+      "At Laserrank, we focus on ethical, high-impact link building strategies that support long-term SEO growth.",
     applications: [
       "Pages that need stronger authority to rank for competitive keywords.",
       "Campaigns that require contextual placements on trusted publications.",

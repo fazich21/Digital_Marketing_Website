@@ -30,7 +30,7 @@ const Footer = () => {
           {/* Brand */}
           <div className="lg:col-span-1">
             <span className="text-2xl font-bold font-display">
-              <span className="text-primary">R</span>ankovate
+              <span className="text-primary">L</span>aserrank
             </span>
             <p className="text-sm text-muted-foreground mt-3 leading-relaxed">
               Built for founders.
@@ -107,7 +107,7 @@ const Footer = () => {
         </div>
 
         <div className="border-t border-border mt-12 pt-6 text-center text-xs text-muted-foreground">
-          © {new Date().getFullYear()} Rankovate. All rights reserved.
+          © {new Date().getFullYear()} Laserrank. All rights reserved.
         </div>
       </div>
     </footer>

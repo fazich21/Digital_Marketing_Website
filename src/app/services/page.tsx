@@ -13,7 +13,7 @@ const serviceIcons: Record<ServiceCategory["title"], LucideIcon> = {
 };
 
 export const metadata: Metadata = {
-  title: "Services | Rankovate",
+  title: "Services | Laserrank",
   description:
     "Explore PR, SEO, and Link Building services designed to scale visibility, authority, and sustainable growth.",
 };

@@ -5,13 +5,13 @@ const reviews = [
     name: "James Morgan",
     date: "Feb 12, 2026",
     image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=150&h=150&auto=format&fit=crop",
-    text: "We worked with Rankovate for link building and digital PR, and the results were impressive. The backlinks were high quality, and our organic traffic started growing within weeks.",
+    text: "We worked with Laserrank for link building and digital PR, and the results were impressive. The backlinks were high quality, and our organic traffic started growing within weeks.",
   },
   {
     name: "Paul Richardson",
     date: "Jan 29, 2026",
     image: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=150&h=150&auto=format&fit=crop",
-    text: "Great experience working with Rankovate. Their SEO strategy and PR campaigns helped us build credibility in the SaaS space.",
+    text: "Great experience working with Laserrank. Their SEO strategy and PR campaigns helped us build credibility in the SaaS space.",
   },
   {
     name: "Joseph Naccarato",
@@ -51,7 +51,7 @@ const ReviewsSection = () => {
         <div className="flex flex-col md:flex-row md:items-center justify-between mb-12">
           <h2 className="text-3xl md:text-5xl font-bold font-display">
             What <span className="text-primary">Web3</span> Founders <em>Say</em>
-            <br />About <span className="text-primary">Rankovate</span>
+            <br />About <span className="text-primary">Laserrank</span>
           </h2>
         </div>
 

@@ -44,12 +44,12 @@ export async function generateMetadata({ params }: ServicePageProps): Promise<Me
 
   if (!service) {
     return {
-      title: "Service Not Found | Rankovate",
+      title: "Service Not Found | Laserrank",
     };
   }
 
   return {
-    title: `${service.title} Services | Rankovate`,
+    title: `${service.title} Services | Laserrank`,
     description: service.description,
   };
 }

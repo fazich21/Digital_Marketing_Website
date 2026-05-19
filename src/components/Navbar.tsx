@@ -28,7 +28,7 @@ const Navbar = () => {
       <div className="container mx-auto relative flex items-center justify-between py-4 px-4">
         <Link href="/" className="flex items-center gap-1">
           <span className="text-3xl font-bold font-display">
-            <span className="text-primary">R</span>ankovate
+            <span className="text-primary">L</span>aserrank
           </span>
         </Link>
 

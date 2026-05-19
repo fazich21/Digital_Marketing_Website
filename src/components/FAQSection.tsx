@@ -18,11 +18,11 @@ interface FAQSectionProps {
 
 const defaultFaqs = [
   {
-    q: "What is Rankovate?",
-    a: "Rankovate is a technology-focused SEO and growth marketing agency that helps businesses improve visibility and drive sustainable online growth.",
+    q: "What is Laserrank?",
+    a: "Laserrank is a technology-focused SEO and growth marketing agency that helps businesses improve visibility and drive sustainable online growth.",
   },
   {
-    q: "What services does Rankovate provide?",
+    q: "What services does Laserrank provide?",
     a: "We offer technical SEO, PR and media placements, link building, and growth marketing solutions for technology companies.",
   },
   {

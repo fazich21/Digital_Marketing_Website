@@ -11,7 +11,7 @@ import { useToast } from "@/hooks/use-toast";
 
 const contactFaqs = [
   {
-    question: "What is the fastest way to contact Rankovate?",
+    question: "What is the fastest way to contact Laserrank?",
     answer:
       "The fastest way is to message us directly on Telegram. You can also fill out the contact form and our team will follow up.",
   },
@@ -83,7 +83,7 @@ const Contact = () => {
                 Our Team Is Here to <span className="text-primary">Support You</span>
               </h1>
               <p className="text-muted-foreground mb-10 max-w-md">
-                Looking for expert SEO, PR distribution, or growth marketing support? Rankovate works with technology companies to improve visibility, strengthen search performance, and drive measurable growth. Get in touch today for prompt assistance.
+                Looking for expert SEO, PR distribution, or growth marketing support? Laserrank works with technology companies to improve visibility, strengthen search performance, and drive measurable growth. Get in touch today for prompt assistance.
               </p>
 
               <div className="space-y-6">
@@ -110,7 +110,7 @@ const Contact = () => {
                   </div>
                   <div>
                     <p className="text-sm text-muted-foreground">Email</p>
-                    <p className="font-semibold">hello@rankovate.com</p>
+                    <p className="font-semibold">hello@laserrank.com</p>
                   </div>
                 </div>
               </div>
@@ -191,7 +191,7 @@ const Contact = () => {
               CONTACT FAQS
             </span>
             <h2 className="text-3xl md:text-5xl font-bold font-display mb-12">
-              Contacting <span className="text-primary">Rankovate</span>
+              Contacting <span className="text-primary">Laserrank</span>
             </h2>
             <Accordion type="single" collapsible className="space-y-3">
               {contactFaqs.map((faq, index) => (
