@@ -4,9 +4,9 @@ import AppProviders from "@/components/AppProviders";
 import "../index.css";
 
 export const metadata: Metadata = {
-  title: "Laserrank — Web3 Marketing Agency | Crypto PR & SEO",
+  title: "Laserrank — Technology Marketing Agency | Digital PR & SEO",
   description:
-    "Laserrank is a Web3 marketing agency specializing in crypto PR distribution, SEO, and link building for blockchain startups.",
+    "Laserrank is a technology marketing agency specializing in digital PR distribution, SEO, and link building for high-growth tech companies.",
 };
 
 interface RootLayoutProps {

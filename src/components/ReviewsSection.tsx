@@ -50,7 +50,7 @@ const ReviewsSection = () => {
         </span>
         <div className="flex flex-col md:flex-row md:items-center justify-between mb-12">
           <h2 className="text-3xl md:text-5xl font-bold font-display">
-            What <span className="text-primary">Web3</span> Founders <em>Say</em>
+            What <span className="text-primary">Tech</span> Founders <em>Say</em>
             <br />About <span className="text-primary">Laserrank</span>
           </h2>
         </div>

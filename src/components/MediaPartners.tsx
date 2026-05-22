@@ -1,10 +1,10 @@
 const partners = [
-  "THE BLOCK",
-  "Coinpaper",
-  "Bitcoin.com",
-  "Investing.com",
-  "CryptoSlate",
-  "BINANCE",
+  "TechCrunch",
+  "Wired",
+  "The Verge",
+  "Forbes Tech",
+  "Digital Trends",
+  "Mashable",
 ];
 
 const MediaPartners = () => {

@@ -35,7 +35,7 @@ const Footer = () => {
             <p className="text-sm text-muted-foreground mt-3 leading-relaxed">
               Built for founders.
               <br />
-              Powered by Web3.
+              Powered by Innovation.
               <br />
               Proven by results — not promises.
             </p>

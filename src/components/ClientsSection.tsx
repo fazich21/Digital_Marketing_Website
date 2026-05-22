@@ -1,10 +1,10 @@
 const clients = [
-  "Crytocoin",
-  "ION Mining",
-  "DNMiner",
-  "DigitMiner",
-  "ARTEMIS",
-  "Bitget",
+  "Nexus Tech",
+  "CloudScale",
+  "DataFlow",
+  "Syncro Systems",
+  "Vortex AI",
+  "Lumina SaaS",
 ];
 
 const ClientsSection = () => {
@@ -17,7 +17,7 @@ const ClientsSection = () => {
               ✦ OUR CLIENTS
             </span>
             <h2 className="text-3xl md:text-4xl font-bold font-display">
-              Trusted by Leading <span className="text-primary">Web3</span>
+              Trusted by Leading <span className="text-primary">Technology</span>
               <br />Tools & <span className="text-primary">Platforms</span>
             </h2>
           </div>
